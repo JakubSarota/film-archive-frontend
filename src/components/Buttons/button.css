@@ -18,7 +18,11 @@
 .btn--outline:hover {
     /* border: 5px solid; */
     padding-right: 100px;
-    transition: all 0.3s ease-out;
+    transition: 250ms;
+}
+
+.btn--outline:after:hover {
+    padding: 0px;
     transition: 250ms;
 }
 

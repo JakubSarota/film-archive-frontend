@@ -3,6 +3,8 @@ import './herosection.css'
 import Navbar from '../navbar/navbar'
 import { Link } from 'react-router-dom'
 
+import test from '../../pages/test'
+
 export default function herosection() {
     return (
         <div className='hero-conteinter'>
@@ -12,18 +14,18 @@ export default function herosection() {
                 <h1>HOME MOVIES</h1>
                 <hr className='line-under-text'/>
                 <div className='hero-conteinter--items'>
-                    <li>
-                        <div className='hero-conteinter-link-items'>
-                            <Link to='/' className='hero-conteinter-link'>MOVIES</Link> 
-                        </div>
-                    </li>
-                    <li>
-                        <div className='hero-conteinter-link-items'>
-                            <Link to='/' className='hero-conteinter-link'>SERIES</Link> 
-                        </div>
-                    </li>
+                    <div className='hero-conteinter-link-items'>
+                        <Link to='/' className='hero-conteinter-link'>
+                            <li><h3>MOVIES</h3></li>
+                        </Link> 
+                    </div>
+                    
+                    <div className='hero-conteinter-link-items'>
+                        <Link to='/' className='hero-conteinter-link'>
+                            <li><h3>SERIES</h3></li>
+                        </Link> 
+                    </div>
                 </div>
-            
         </div>
     )
 }

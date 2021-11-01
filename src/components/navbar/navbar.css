@@ -26,8 +26,8 @@ li {
 }
 
 .input--box {
-    color: rgb(255, 255, 255);
     background-color: transparent;
+    color: rgb(255, 255, 255);
     border-radius: 25px;
     padding: 15px 30px;
     border: 3px solid;
@@ -42,4 +42,14 @@ li {
 
 ::placeholder {
     color:rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center; 
+    font-size: 22px;
+}
+
+.navbar-header--logo {
+    position: inherit;
+    padding-right: 130rem;
 }

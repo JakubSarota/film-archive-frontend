@@ -31,24 +31,7 @@ img {
 .hero-conteinter-link {
     padding-top: 15px;
     font-size: 24px;
-}
-
-.hero-conteinter-link:after {
-    /* background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0; */
-}
-
-.hero-conteinter-link:hover:after {
-    width: 100%;
-    left: 0;
+    text-decoration: none;
 }
 
 .hero-conteinter--items {
@@ -66,4 +49,30 @@ img {
 
 h1 {
     padding-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h3:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+h3:hover:after {
+    width: 50%;
+    left: 25%;
+}
+
+li { 
+    position: relative; 
 }
