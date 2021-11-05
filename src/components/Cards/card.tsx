@@ -1,9 +1,12 @@
 import React from 'react'
+import './card.css'
 
 export default function card() {
     return (
-        <div>
-            <h1>KARTY</h1>
+        <div className='card'>
+            <div>
+                <h1>asda</h1>
+            </div>
         </div>
     )
 }

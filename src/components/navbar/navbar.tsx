@@ -1,11 +1,14 @@
 import './navbar.css'
 import { Button } from '../Buttons/button'
+import { Link } from 'react-router-dom'
 
 export default function navbar() {
     return (
         <nav className='navbar'>
             <form className='navbar-header--logo'>
-                <h1>RECORD <br/>VIDEO</h1>
+                <Link to='/' className='navbar-header-link--logo'>
+                    <h2>RECORD <br/>VIDEO</h2>
+                </Link>
             </form>
             <form className='navbar-header--input'>
                 <input type='text' placeholder='Search' className='input--box'></input>
