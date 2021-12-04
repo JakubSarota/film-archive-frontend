@@ -8,6 +8,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route path='/' exact component={home}/>
+          
         </Switch>
       </Router>
     </div>

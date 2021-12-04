@@ -1,5 +1,5 @@
 * {
-  font-family: 'Arial Rounded MT', 'bold';
+  font-family: 'Comic Sans MS', 'bold';
   color: #fff;
   font-size: 12px;
   padding: 0;
@@ -12,5 +12,14 @@
   align-items: center;
   display: flex;
   font-size: 3px;
-  padding: 26%;
+  padding: 25%;
+}
+
+.home {
+  background-image: url('/images/photo2.jpg');
+  background-repeat: repeat-x;
+  background-size: fill;
+  background-position: center;
+  font-size: 100px;
+  color: #fff;
 }

@@ -5,6 +5,7 @@ img {
 }
 
 .hero-conteinter {
+    margin-bottom: -20%;
     height: none;
     display: flex;
     flex-direction: column;
@@ -14,8 +15,9 @@ img {
 }
 
 .hero-conteinter > h1 {
+    position: relative;
     font-size: 80px;
-    margin-top: -425px;
+    
 }
 
 .hero-conteinter-link-items {

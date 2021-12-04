@@ -5,7 +5,7 @@ export default function card() {
     return (
         <div className='card'>
             <div>
-                <h1>asda</h1>
+                <h1></h1>
             </div>
         </div>
     )

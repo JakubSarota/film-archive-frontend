@@ -1,4 +1,8 @@
 .card {
     padding: 5rem;
-    background: black;
+    background: rgb(255, 255, 255);
+}
+
+.card h1 {
+    color: red;
 }
