@@ -1,10 +1,10 @@
 import '../../App.css'
-import './herosection.css'
-import Navbar from '../Navbar/navbar'
+import './Herosection.css'
+import Navbar from '../Navbar/Navbar'
 import { Link } from 'react-router-dom'
 
 
-export default function herosection() {
+export default function Herosection() {
     return (
         <div className="home">
             <div className='hero-conteinter'>

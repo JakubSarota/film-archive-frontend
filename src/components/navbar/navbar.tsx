@@ -1,5 +1,5 @@
-import './navbar.css'
-import { Button } from '../Buttons/button'
+import './Navbar.css'
+import { Button } from '../Buttons/Button'
 import { Link } from 'react-router-dom'
 import * as FaIcons from 'react-icons/fa'
 import { useState } from 'react'
@@ -7,7 +7,6 @@ import { useState } from 'react'
 export default function Navbar() {
 
    const [sidebar, setSidebar] = useState(false)
-
 
     return (
             <nav className='navbar'>

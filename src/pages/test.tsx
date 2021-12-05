@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 export default function test() {
-     // Zadeklaruj nową zmienną stanu, którą nazwiemy „count”
   const [count, setCount] = useState(0);
 
   return (
