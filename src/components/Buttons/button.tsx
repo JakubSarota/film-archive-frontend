@@ -7,8 +7,8 @@ const STYLES = ['btn--outline']
 const SIZES = ['btn--medium']
 
 interface Props {
-    link?: any;
-    children?: any;
+    link: string;
+    children: React.ReactNode;
     type?: any;
     onClick?: any;
     buttonStyle?: any;
