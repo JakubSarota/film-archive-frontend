@@ -4,11 +4,10 @@ React TypeScript
 
 ## Zaimplementowane pakiety
 
-react-native
-react-icons
+[react-native](https://www.npmjs.com/package/react-native)
+[react-icons](https://react-icons.github.io/react-icons/)
 
 ### `npm i --save @types/react-icons`
-[React documentation](https://react-icons.github.io/react-icons/)
 ### `npm i --save @types/react-native`\
-[React documentation](https://www.npmjs.com/package/react-native)
+
 
