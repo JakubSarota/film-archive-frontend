@@ -8,6 +8,6 @@ React TypeScript
 [react-icons](https://react-icons.github.io/react-icons/)
 
 ### `npm i --save @types/react-icons`
-### `npm i --save @types/react-native`\
+### `npm i --save @types/react-native`
 
 
