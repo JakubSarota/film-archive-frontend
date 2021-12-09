@@ -91,16 +91,19 @@ li {
     background-color: rgb(31,31,31);
     position: fixed;
     right: -100%;
-    transition: 850ms;
+    transition: 450ms;
     width: 550px;
     height: 100vh;
     top: 0;
+    z-index: 1;
 }
 
 .nav-menu.active {
     transition: 350ms;
     right: 0;
+    z-index: 1;
 }
+
 
 .nav-text {
     display: flex;

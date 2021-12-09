@@ -7,8 +7,8 @@ export default function Herosection() {
     return (
         <div className="home">
             <div className='hero-conteinter'>
-                <Navbar/>
-                <i className="fas fa-film"></i><h1>FILM ARCHIVE</h1>
+                <Navbar/> {/*Sekcja navbar można sprawdzić w pliku Navbar.tsx */}
+                <h1>FILM ARCHIVE</h1>
                     <hr className='line-under-text'/>
                     <div className='hero-conteinter--items'>
                         <div className='hero-conteinter-link-items'>
