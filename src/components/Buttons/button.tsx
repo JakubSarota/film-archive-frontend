@@ -4,7 +4,7 @@ import './Button.css'
 
 const STYLES = ['btn--outline']
 
-const SIZES = ['btn--medium']
+const SIZES = ['btn--medium', 'btn--tiny']
 
 interface Props {
     link: string;

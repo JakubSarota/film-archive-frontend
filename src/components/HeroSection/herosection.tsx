@@ -7,7 +7,7 @@ export default function Herosection() {
     return (
         <div className="home">
             <div className='hero-conteinter'>
-                <Navbar/> {/*Sekcja navbar można sprawdzić w pliku Navbar.tsx */}
+                <Navbar/> {/*Sekcje navbar można sprawdzić w pliku Navbar.tsx */}
                 <h1>FILM ARCHIVE</h1>
                     <hr className='line-under-text'/>
                     <div className='hero-conteinter--items'>

@@ -18,11 +18,11 @@ export default function Navbar() {
         <nav className='navbar'>
             <form className='navbar-header--logo'>
                 <Link to='/' className='navbar-header-link--logo'>
-                    <RiIcons.RiMovie2Line size={40} className='logo-icon'/><h2>FILM <br/> ARCHIVE</h2>
+                    <RiIcons.RiMovie2Line className='logo-icon'/><h2>FILM <br/> ARCHIVE</h2>
                 </Link>
             </form>
-            <form className='navbar-header--input'>
-                <AiIcons.AiOutlineSearch size={20}  className='input--icon'/>
+             <form className='navbar-header--input'>
+                <AiIcons.AiOutlineSearch className='input--icon'/>
                 <input type='text' placeholder='Search'/>
             </form>
 
@@ -40,7 +40,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link to="#" className='menu-bars'>
-                            <FaIcons.FaBars size={35} onClick={showSidebar}/>
+                            <FaIcons.FaBars onClick={showSidebar}/>
                         </Link>
                     </li>
                 </div>
@@ -50,7 +50,7 @@ export default function Navbar() {
                 <ul className='nav-menu-items'>
                     <li>
                         <Link to='#' className='menu-bars'>
-                            <AiIcons.AiOutlineClose size={35} onClick={showSidebar}/>
+                            <AiIcons.AiOutlineClose onClick={showSidebar}/>
                         </Link>
                     </li>
                     {SidebarData.map((item, index) => {
@@ -64,7 +64,7 @@ export default function Navbar() {
                         )
                     })}
                 </ul>
-            </nav>
+            </nav> 
         </nav>
     )
 }

@@ -41,6 +41,11 @@
     transition: all 0.3s ease-out;
 }
 
-.btn--outline > a {
+.btn--medium > a {
     font-size: 20px;
+}
+
+.btn--tiny > a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
 }

@@ -1,13 +1,11 @@
 import React from 'react'
 import * as RiIcons from 'react-icons/ri'
 
-const size = 20;
-
 export const SidebarData = [
     {
         title: 'Movies',
         path: '/',
-        icon: <RiIcons.RiMovie2Line size={size}/>,
+        icon: <RiIcons.RiMovie2Line/>,
         cName: 'nav-text'
     },
     {
@@ -28,7 +26,7 @@ export const SidebarData = [
     {
         title: 'Series',
         path: '/',
-        icon: <RiIcons.RiMovieLine size={size}/>,
+        icon: <RiIcons.RiMovieLine/>,
         cName: 'nav-text'
     },
     {

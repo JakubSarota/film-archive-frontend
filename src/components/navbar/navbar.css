@@ -1,150 +1,153 @@
 .navbar {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    background-color: none;
-    height: 70px;
-    top: 25px;
-}
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            background-color: none;
+            top: 25px;
+        }
 
-li {
-    list-style-type: none
-}
+        .navbar-header--logo {
+                    position: inherit;
+                    padding-right: 100rem;
+                }
 
-.navbar-header--buttons {
-    margin: 0 0 0 1300px;
-}
+                .navbar-header-link--logo {
+                    color: rgb(255,255,255,1);
+                    text-decoration: none;
+                }
 
-.button-item {
-    display: flex;
-    margin: 0 10px 0 10px;
-}
+                .navbar-header-link--logo > h2 {
+                    display: inline;
+                    text-align: right; 
+                    font-size: 22px;
+                }
 
-.navbar-header--input {
-    color: rgb(255, 255, 255);
-    border-radius: 25px;
-    padding: 15px 30px;
-    border: 3px solid;
-    margin: 0 20px 0 20px;
-    width: 400px;
-    position: inherit;
-    align-items: center;
-}
+                .logo-icon {
+                    font-size: 36px;
+                    position: relative;
+                    top: 5px;
+                    display: inline;
+                }
 
-.navbar-header--input > input {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    flex: 1; 
-    width: 90%;
-}
+                .navbar-header-link--logo:hover {
+                    color:rgb(212, 175, 55, 0.9);
+                    transition: 0.3s ease; 
+                }
 
-.input--box:focus {
-    outline: none;
-}
+        .navbar-header--input {
+                    position: inherit;
+                    align-items: center;
+                    color: rgb(255, 255, 255, 1);
+                    border-radius: 25px;
+                    padding: 15px 30px;
+                    border: 3px solid;
+                    margin: 0 20px 0 20px;
+                    width: 400px;
+                }
 
-::placeholder {
-    color:rgb(255, 255, 255);
-}
+                ::placeholder {
+                    color:rgb(255, 255, 255);
+                }
 
-.navbar-header-link--logo > h2 {
-    display: inline;
-    text-align: right; 
-    font-size: 22px;
-}
+                .navbar-header--input > input {
+                    background-color: transparent;
+                    color: rgb(255, 255, 255, 1);
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    flex: 1; 
+                    width: 90%;
+                }
 
-.input--icon {
-  position: relative;
-  margin-right: 5px;
-  top: 3px;
-}
+                .input--box:focus {
+                    outline: none;
+                }
 
-.navbar-header-link--logo > h2:hover {
-    color:rgb(212, 175, 55, 0.9);
-    transition: 0.3s ease; 
-}
+                .input--icon {
+                    font-size: 20px;
+                    position: relative;
+                    margin-right: 5px;
+                    top: 3px;
+                  }
 
-.navbar-header--logo {
-    position: inherit;
-    padding-right: 120rem;
-}
+        .navbar-header--buttons {
+                    margin: 0 0 0 1300px;
+                }
 
-.navbar-header-link--logo {
-    text-decoration: none;
-}
+               
 
-.logo-icon {
-    position: relative;
-    top: 5px;
-    display: inline;
-}
+                .button-item {
+                    display: flex;
+                    margin: 0 10px 0 10px;
+                }
+                
+        .nav-menu.active {
+                    transition: 350ms;
+                    right: 0;
+                    z-index: 1;
+                }
+                
+                .nav-menu {
+                    background-color: rgb(31,31,31);
+                    position: fixed;
+                    right: -100%;
+                    transition: 550ms;
+                    width: 550px;
+                    height: 100vh;
+                    top: 0;
+                    z-index: 1;
+                }
 
-.menu-bars {
-    position: relative;
-    top: 13px;
-    margin: 30px;
-}
+                .nav-menu-items {
+                    width: 100%;
+                }
 
-.nav-menu {
-    background-color: rgb(31,31,31);
-    position: fixed;
-    right: -100%;
-    transition: 450ms;
-    width: 550px;
-    height: 100vh;
-    top: 0;
-    z-index: 1;
-}
+                .menu-bars {
+                    color: rgb(255,255,255, 1);
+                    font-size: 35px;
+                    position: relative;
+                    top: 13px;
+                    margin: 30px;
+                }
 
-.nav-menu.active {
-    transition: 350ms;
-    right: 0;
-    z-index: 1;
-}
+        .nav-text {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding: 8px 0px 0px 25px;
+                    list-style: none;
+                    height: 50px;
+                    font-size: 20px;
+                }
+        
+                .nav-text a {
+                    text-decoration: none;
+                    color: #f5f5f5;
+                    width: 95%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+                    border-radius: 5px;
+                    transition: 250ms;
+                }
 
-
-.nav-text {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 8px 0px 0px 25px;
-    list-style: none;
-    height: 50px;
-}
-  
-.nav-text a {
-    text-decoration: none;
-    color: #f5f5f5;
-    width: 95%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    border-radius: 5px;
-    transition: 250ms;
-}
-
-.nav-text:hover {
-      text-decoration: underline;
-      transition: 250ms;
-}
-  
-.nav-menu-items {
-    width: 100%;
-}
-  
-span {
-    margin-left: 16px;
-    font-size: 20px;
-}
+                .nav-text:hover {
+                    text-decoration: underline;
+                    transition: 250ms;
+                }
+        
+                span {
+                    margin-left: 16px;
+                    font-size: 20px;
+                }
 
 
 @media screen and (max-width: 1600px) {
     .navbar-header--logo {
         position: inherit;
-        padding-right: 100rem;
+        padding-right: 75rem;
     }
 
     .navbar-header--buttons {
