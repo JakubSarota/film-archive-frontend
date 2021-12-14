@@ -1,81 +1,75 @@
-img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
 .hero-conteinter {
-    margin-bottom: -20%;
-    height: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+            margin-bottom: -20%;
+            height: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
 
-.hero-conteinter > h1 {
-    position: relative;
-    font-size: 80px;
-    
-}
+        .hero-conteinter > h1 {
+            padding-bottom: 15px;
+            position: relative;
+            font-size: 80px;
+            
+        }
 
-.hero-conteinter-link-items {
-    box-sizing: border-box;
-    align-items: flex-start;
-    flex-direction: row;
-    text-align: center;
-    display: grid;
-    margin: 16px;
-    width: 160px;
-}
+        .line-under-text {
+            width: 540px;
+            height: 0.4rem;
+            border-radius: 100rem;
+            background-color: #fff;
+        }
 
-.hero-conteinter-link {
-    padding-top: 15px;
-    font-size: 24px;
-    text-decoration: none;
-}
+        .hero-conteinter--items {
+                    position: sticky;
+                    list-style-type: none;
+                    display: flex;
+                }
 
-.hero-conteinter--items {
-    position: sticky;
-    list-style-type: none;
-    display: flex;
-}
+                .hero-conteinter-link-items {
+                            box-sizing: border-box;
+                            align-items: flex-start;
+                            flex-direction: row;
+                            text-align: center;
+                            display: grid;
+                            margin: 16px;
+                            width: 160px;
+                        }
 
-.line-under-text {
-    width: 540px;
-    height: 0.4rem;
-    border-radius: 100rem;
-    background-color: #fff;
-}
+                        .hero-conteinter-link {
+                            padding-top: 15px;
+                            font-size: 24px;
+                            text-decoration: none;
+                        }
 
-h1 {
-    padding-bottom: 15px;
-}
+                        li { 
+                                    position: relative; 
+                                }
 
-h3 {
-    color: rgba(255, 255, 255, 1);
-    font-size: 22px;
-}
+                                h3 {
+                                    color: rgba(255, 255, 255, 1);
+                                    font-size: 22px;
+                                }
 
-h3:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
+                                h3:after {
+                                    background: none repeat scroll 0 0 transparent;
+                                    bottom: 0;
+                                    content: "";
+                                    display: block;
+                                    height: 2px;
+                                    left: 50%;
+                                    position: absolute;
+                                    background: #fff;
+                                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                                    width: 0;
+                                }
 
-h3:hover:after {
-    width: 50%;
-    left: 25%;
-}
+                                h3:hover:after {
+                                    width: 50%;
+                                    left: 25%;
+                                }
 
-li { 
-    position: relative; 
-}
+
+

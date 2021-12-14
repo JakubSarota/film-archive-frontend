@@ -15,6 +15,7 @@
                 .navbar-header-link--logo {
                     color: rgb(255,255,255,1);
                     text-decoration: none;
+                    transition: 0.5s ease; 
                 }
 
                 .navbar-header-link--logo > h2 {
@@ -31,8 +32,8 @@
                 }
 
                 .navbar-header-link--logo:hover {
-                    color:rgb(212, 175, 55, 0.9);
-                    transition: 0.3s ease; 
+                    color:rgb(212, 175, 55, 0.8);
+                    transition: 0.5s ease; 
                 }
 
         .navbar-header--input {

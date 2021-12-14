@@ -6,12 +6,12 @@ import { Button } from '../Buttons/Button'
 export default function Herosection_Data() {
     return (
         <div className="Herosection_Data">
+            <div className="Herosection_Data-shadow">
             <div className="Herosection_Data-background"/>
 
             <div className="Herosection_Data_title-column">
-                
                 <div className="Herosection_Data_title-content">
-                    <h2>BEST IN THIS YEAR</h2>
+                    <h2>-BEST IN THIS YEAR-</h2>
                 </div>
 
                 <div className="Herosection_Data_title-content">
@@ -19,8 +19,8 @@ export default function Herosection_Data() {
                         <a>More</a>
                     </Button>
                 </div>
-
             </div>    
+
 
             <div className="Herosection_Data-column">
                 <div className="Herosection_Data-content">
@@ -57,7 +57,7 @@ export default function Herosection_Data() {
                 </div>
 
             </div>
-
+            </div>
         </div>
     )
 }

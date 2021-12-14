@@ -1,8 +1,18 @@
-.card {
-    padding: 5rem;
-    background: rgb(255, 255, 255);
-}
+.Card {
+            position: relative;
+            display: flex;
+            top: 20px;
+        }
 
-.card h1 {
-    color: red;
-}
+            .Card__container {      
+                text-align: center;
+                flex-direction: column;
+                display: flex;
+                flex: 1;
+            }
+
+                .Card__items {
+                    flex: 1;
+                }
+
+                

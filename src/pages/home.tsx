@@ -8,6 +8,7 @@ export default function home() {
         <React.Fragment>
             <HeroSection/>
             <HeroSection_Data/>
+            <Card/>
         </React.Fragment>
     )
 }
