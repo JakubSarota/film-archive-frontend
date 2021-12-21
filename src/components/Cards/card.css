@@ -1,18 +1,38 @@
-.Card {
+.Card { 
             position: relative;
-            display: flex;
-            top: 20px;
+            text-align: center;
+            top: 50px;
+        }
+        
+        .Card > h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(47, 65, 71, 1);
         }
 
-            .Card__container {      
-                text-align: center;
+        .Card__container {
+            display: flex;
+            padding: 0 300px 0 300px;
+        }
+
+            .Card__column {      
                 flex-direction: column;
                 display: flex;
                 flex: 1;
+                
             }
 
-                .Card__items {
+                .Card__content {
                     flex: 1;
+                    
+                }
+
+                .Card__items-Link {
+                    text-decoration: none;
+                }
+
+                .Card__items-Link > h2 {
+                    color: rgb(47, 65, 71, 1);
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 }
 
                 
