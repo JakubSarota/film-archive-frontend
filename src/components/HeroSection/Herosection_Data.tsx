@@ -11,7 +11,7 @@ export default function Herosection_Data() {
 
             <div className="Herosection_Data_title-column">
                 <div className="Herosection_Data_title-content">
-                    <h2>-BEST IN THIS YEAR-</h2>
+                    <h2>BEST IN THIS YEAR</h2>
                 </div>
 
                 <div className="Herosection_Data_title-content">
