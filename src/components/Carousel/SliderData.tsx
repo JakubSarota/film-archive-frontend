@@ -13,6 +13,12 @@ export const SliderData = [
     },
     {
         image: 'https://i.pinimg.com/564x/a0/e5/fa/a0e5fa050db4d59763db2471113e514e.jpg'
+    },
+    {
+        image: 'https://i.pinimg.com/564x/b5/23/4c/b5234c28d1b357e13e116a7b52c9e315.jpg'
+    },
+    {
+        image: 'https://i.pinimg.com/564x/b5/23/4c/b5234c28d1b357e13e116a7b52c9e315.jpg'
     }
 ]
     

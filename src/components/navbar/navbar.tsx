@@ -4,45 +4,65 @@ import { Link } from 'react-router-dom'
 import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import * as RiIcons from 'react-icons/ri'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SidebarData } from '../SidebarData/SidebarData'
 
 
 export default function Navbar() {
 
     const [sidebar, setSidebar] = useState(false)
-
     const showSidebar = () => setSidebar(!sidebar)
+    const [navbar, setNavbar] = useState(false)
+
+    const changeBackground = () => {
+        console.log(window.scrollY)
+        if(window.scrollY >=80) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground)
 
     return (
-        <nav className='navbar'>
-            <form className='navbar-header--logo'>
-                <Link to='/' className='navbar-header-link--logo'>
-                    <RiIcons.RiMovie2Line className='logo-icon'/><h2>FILM <br/> ARCHIVE</h2>
-                </Link>
-            </form>
-             <form className='navbar-header--input'>
-                <AiIcons.AiOutlineSearch className='input--icon'/>
-                <input type='text' placeholder='Search'/>
-            </form>
+        <nav className={navbar ? 'navbar active' : 'navbar'}>
+            <div className="navbar-container">
+                <form className='navbar-header--logo'>
+                    <Link to='/' className='navbar-header-link--logo'>
+                        <RiIcons.RiMovie2Line className='logo-icon'/><h2>FILM <br/> ARCHIVE</h2>
+                    </Link>
+                </form>
 
-            <div className='navbar-header--buttons'>      
-                <div className='button-item'>
-                    <li>
-                        <Button link='/' buttonStyle='btn--outline' buttonSize='btn--medium'>
-                            <a>Log in</a>
-                        </Button>
-                    </li>
-                    <li>
-                        <Button link='/' buttonStyle='btn--outline' buttonSize='btn--medium'>
-                            <a>Register</a>
-                        </Button>
-                    </li>
-                    <li>
-                        <Link to="#" className='menu-bars'>
-                            <FaIcons.FaBars onClick={showSidebar}/>
-                        </Link>
-                    </li>
+                <div className='navbar-header--buttons'>      
+                    <div className='button-item'>
+                        <li>
+                            <Button link='/' buttonStyle='btn--outline' buttonSize='btn--medium'>
+                                <AiIcons.AiOutlineSearch className='input--icon'/>
+                            </Button>
+                        </li>
+                        <li>
+                            <Button link='/' buttonStyle='btn--outline' buttonSize='btn--medium'>
+                                <a>News</a>
+                            </Button>
+                        </li>
+                        <li>
+                            <Button link='/' buttonStyle='btn--outline' buttonSize='btn--medium'>
+                                <a>Watchlist</a>
+                            </Button>
+                        </li>
+                    
+                        <li>
+                            <Button link='/' buttonStyle='btn--filled' buttonSize='btn--medium'>
+                                <a>Sign up</a>
+                            </Button>
+                        </li>
+                        <li>
+                            <Link to="#" className='menu-bars'>
+                                <FaIcons.FaBars onClick={showSidebar}/>
+                            </Link>
+                        </li>
+                    </div>
                 </div>
             </div>
 
@@ -68,3 +88,4 @@ export default function Navbar() {
         </nav>
     )
 }
+

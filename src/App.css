@@ -7,18 +7,17 @@
 }
 
 .home {
-  background-position: center;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
   display: flex;
-  padding: 25%;
+  font-size: 12px;
+  height: 100vh;
 }
 
 .home {
   background-image: url('/images/image-1.jpg');
   background-repeat: repeat-x;
-  background-size: fill;
+  background-size: cover;
   background-position: center;
   color: #fff;
 }

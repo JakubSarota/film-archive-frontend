@@ -5,6 +5,7 @@ import { SliderData } from '../Carousel/SliderData'
 import './Card.css'
 
 export default function Card() {
+    
     return (
         <div className='Card'>
             <h1>FEATURED TODAY</h1> 
