@@ -14,6 +14,12 @@ export default function Navbar() {
     const showSidebar = () => setSidebar(!sidebar)
     const [navbar, setNavbar] = useState(false)
 
+    if(sidebar) {
+        document.body.style.overflow = 'hidden'
+    } else {
+        document.body.style.overflow = 'visible'
+    }
+    
     const changeBackground = () => {
         console.log(window.scrollY)
         if(window.scrollY >=80) {

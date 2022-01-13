@@ -6,7 +6,6 @@
             height: 0;
             z-index: 1;
             transition: 350ms ease;
-            
         }
 
         .navbar.active {
@@ -63,27 +62,18 @@
                     transition: 0.5s ease; 
                 }
 
-        .navbar-header--input {
-                    justify-content: center;
-                    color: rgb(255, 255, 255, 1);
-                    border-radius: 18px;
-                    padding: 15px 30px;
-                    border: 3px solid;
-                    width: 400px;
-                }
-
                 ::placeholder {
                     color:rgb(255, 255, 255);
                 }
 
-                .navbar-header--input > input {
+                input {
                     background-color: transparent;
                     color: rgb(255, 255, 255, 1);
                     border: none;
                     outline: none;
                     font-size: 16px;
                     flex: 1; 
-                    width: 90%;
+                    width: 50%;
                 }
 
                 .input--box:focus {
@@ -123,7 +113,7 @@
                     width: 100%;
                     height: 100vh;
                     top: 0;
-                    z-index: 1;
+                    z-index: 999;
                 }
 
                 .nav-menu-items {

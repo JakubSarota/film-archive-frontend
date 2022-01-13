@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Button.css'
 
-const STYLES = ['btn--outline', 'btn--filled']
+const STYLES = ['btn--outline', 'btn--filled', 'btn--normal']
 
 const SIZES = ['btn--medium', 'btn--tiny']
 
 interface Props {
-    link: string;
+    link: any;
     children: React.ReactNode;
     type?: any;
     onClick?: any;

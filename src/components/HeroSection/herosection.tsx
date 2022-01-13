@@ -22,7 +22,7 @@ export default function Herosection() {
                                 <li><h3>SERIES</h3></li>
                             </Link> 
                         </div>
-
+                        
                         <div className='hero-conteinter-link-items'>
                             <Link to='/' className='hero-conteinter-link'>
                                 <li><h3>TRAILERS</h3></li>

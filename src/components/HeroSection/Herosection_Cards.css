@@ -43,11 +43,10 @@
                 }
 
 .Herosection_Data-column {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
             position: relative;
             top: 180px;
-            display: flex;
-            flex-wrap: column;
-            margin: 0 0px;
         }
         .Herosection_Data-content {
             flex: 1;
@@ -100,3 +99,5 @@
         height: 253px;
     }
 }
+
+
