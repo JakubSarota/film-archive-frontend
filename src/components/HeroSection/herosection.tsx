@@ -1,6 +1,5 @@
 import '../../App.css'
 import './Herosection.css'
-import Navbar from '../Navbar/Navbar'
 import { Link } from 'react-router-dom'
 
 export default function Herosection() {

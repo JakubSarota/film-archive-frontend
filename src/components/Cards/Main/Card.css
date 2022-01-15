@@ -1,0 +1,63 @@
+.Card { 
+            position: relative;
+            text-align: center;
+            top: 50px;
+        }
+
+        .Card__slider-featured-today {
+            position: relative;
+            top: 50px;
+        }
+
+        .Card__slider-featured-today > h1 {
+            margin: 0 0 30px 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(47, 65, 71, 1);
+            text-decoration: underline;
+            text-decoration-color: rgb(212, 175, 55, 1);
+            transition: color .3s ease
+        }
+
+        .Card__container {
+            display: flex;
+            padding: 0 500px 0 500px;
+        }
+
+            .Card__column {      
+                flex-direction: column;
+                display: flex;
+                flex: 1;
+            }
+
+                .Card__content {
+                    flex: 1;
+                }
+
+                .Card__items-Link {
+                    text-decoration: none;
+                }
+
+                .Card__items-Link > h2 {
+                    color: rgb(47, 65, 71, 0.8);
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    transition: 300ms ease;
+                }
+
+                .Card__items-Link > h2:hover {
+                    color: rgb(47, 65, 71, 1);
+                    transition: 300ms ease;
+                }
+
+.Card__slider-explore {
+    position: relative;
+    text-align: center;
+    height: auto;
+    top: 75px;
+    background-color: rgb(0,0,0,1);
+}
+
+.Card__slider-explore > h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    color: rgb(255,255,255,1);
+}

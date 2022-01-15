@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection/Herosection'
-import Card from '../components/Cards/Card'
-import HeroSection_Data from '../components/HeroSection/Herosection_Data'
+import Card from '../components/Cards/Main/Card'
+import HeroSection_Data from '../components/HeroSection/HeroSectionCards/Herosection_Cards'
 import Navbar from '../components/Navbar/Navbar'
 
 export default function home() {

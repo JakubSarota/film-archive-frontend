@@ -25,7 +25,6 @@
             max-width: max-content;
             display: flex; */
             align-items: center;
-            
             display: flex;
             justify-content: space-between;
         }
@@ -79,13 +78,6 @@
                 .input--box:focus {
                     outline: none;
                 }
-
-                .input--icon {
-                    font-size: 20px;
-                    position: relative;
-                    margin-right: 5px;
-                    top: 3px;
-                  }
 
         .navbar-header--buttons {
                     display: flex;

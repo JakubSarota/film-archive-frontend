@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import  { Link } from 'react-router-dom'
-import { Button } from '../Buttons/Button'
-import { SliderData } from './SliderData'
+import { Button } from '../../Buttons/Button'
+import { SliderData } from './FeaturedTodayData'
 import Slider from 'react-slick'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { AiOutlineStar, AiFillStar, AiOutlinePlayCircle } from 'react-icons/ai'
-import './ImageSlider.css'
+import './FeaturedTodaySlider.css'
 
 
 const ImageSlider = ( {slides} : {slides: any} ) => {
@@ -31,7 +31,7 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
     const settings = {
         infinite: true,
         speed: 300,
-        slidesToShow: 3,
+        // slidesToShow: 5,
         centerMode: true,
         touchMove: false,
         variableWidth: true,
@@ -47,7 +47,7 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
                     return(
                         <div className="ImageSlider">
                             <div className={index === current ? 'slide active' : 'slide'} key={index}>                            
-                                <li className="image--item">
+                                <li>
                                     <Link to='/'>
                                         <div className="image-slider">
                                             <img src={slide.image} className='image' />
@@ -56,14 +56,16 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
                                     <div className="image-text">
                                         <li className="image-text--items">
                                             <a className='title-text'>{slide.title}</a>
-                                            <br/>
+                                            
                                             <a className='title-rate'><AiFillStar/>{slide.rate}</a>
-                                        </li>
-                                        <a href={slide.trailer} target='__blank'>
-                                            <button className='slide-button'>
-                                                <a className='button-text'>Watch trailer<AiOutlinePlayCircle/></a>
-                                            </button>
-                                        </a>                                                                        
+                                            
+                                            <a href={slide.trailer} target='__blank' className='button-text'>
+                                                <button className='slide-button'>
+                                                    <h4>Watch trailer</h4>
+                                                    <AiOutlinePlayCircle className='slide-icon'/>
+                                                </button>
+                                            </a> 
+                                        </li>                                                                    
                                     </div>                                        
                                 </li>                                      
                             </div>

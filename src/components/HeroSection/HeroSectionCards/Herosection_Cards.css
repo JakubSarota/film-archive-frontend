@@ -19,7 +19,7 @@
             width: calc(100% - 100px);
             height: 300px;
         }
-
+        
         .Herosection_Data_title-column {   
                     position: relative;
                     text-align: center;
@@ -29,6 +29,7 @@
                 }
                 
                 .Herosection_Data_title-content {
+                    text-decoration: none;
                     flex: 1;
                 }
 
@@ -36,13 +37,20 @@
                     color: rgb(255,255,255,1);
                     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     font-size: 34px;
+                    transition: 300ms;
                 }
 
-                .Herosection_Data_title-content > Button > a { 
-                    font-family: 'Segoe UI';
+                .Herosection_Data_title-content > h2:hover {
+                    color: rgb(255, 0, 0);      
+                    transition: 300ms;
                 }
+
+                /* .Herosection_Data_title-content > Button > a { 
+                    font-family: 'Segoe UI';
+                } */
 
 .Herosection_Data-column {
+    
             display: grid;
             grid-template-columns: repeat(4, auto);
             position: relative;
