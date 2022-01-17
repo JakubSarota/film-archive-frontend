@@ -1,0 +1,136 @@
+.Herosection_Card {
+            position: relative;
+        }
+
+        .Herosection_Card-shadow {
+            position: relative;
+            height: 750px;
+            background-color: transparent;
+            content: "";
+            width: 100%;
+            box-shadow: 0px 0px 60px rgba(0, 0, 0, .4);
+        }
+
+        .Herosection_Card-background {
+            position: absolute;
+            margin: 0 50px 0 50px;
+            top: 100px;
+            background-color: rgb(47, 65, 71, 1);
+            width: calc(100% - 100px);
+            height: 300px;
+        }
+        
+        .Herosection_Card_title-column {       
+                    position: inherit;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    top: 150px;
+                    justify-content: center;
+                }
+
+                .Herosection_Card_title-content {
+                    align-items: center;
+                    text-decoration: none;      
+                    display: flex;
+                }
+
+                .Herosection_Card_title-content > h2 {
+                    position: inherit;
+                    color: rgb(255,255,255,1);
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 34px;
+                    transition: 550ms;
+                }   
+
+                .Herosection_Card-icon {
+                    opacity: 0;
+                    color: rgb(255,255,255,1);
+                    font-size: 28px;
+                    position: relative;
+                    text-align: center;
+                    transition: ease 300ms;
+                    transition: transform opacity 800ms;
+                }
+
+                .Herosection_Card_title-content > h2:hover {
+                    color: rgb(212, 175, 55, 0.8);    
+                    transition: 550ms;
+                }
+
+                .Herosection_Card_title-content:hover .Herosection_Card-icon {
+                    opacity: 1.0;
+                    transform: translate(20px, 0);
+                }
+
+                /* .Herosection_Card_title-content > Button > a { 
+                    font-family: 'Segoe UI';
+                } */
+
+.Herosection_Card-column {
+
+            position: relative;
+            top: 180px;
+        }
+        .Herosection_Card-content {
+            flex: 1;
+        }
+
+.Herosection_Image {
+            margin: auto;
+        }
+
+        .Herosection_Image-Link {
+                    text-decoration: none!important;
+                }
+
+                .Herosection_Image-wrapper {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .Herosection_Image-img {
+                            box-shadow: 2px 2px 10px black;
+                            position: relative;
+                            display: block;
+                            width: 245px;
+                            height: 353px;
+                            transition: all 0.2s linear;
+                        }          
+
+                        .Herosection_Image-img:hover {
+                            transform: scale(1.05);
+                            box-shadow: 1px 1px 5px rgb(0,0,0,1);
+                            transition: all 0.2s linear;
+                        }
+        
+        .Herosection_Image-info {
+                    padding-top: 8px;
+                    text-align: justify;
+                    text-align-last: center;
+                }
+
+                .Herosection_Image-text {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: rgb(34, 47, 51, 0.9);
+                }
+        
+
+@media screen and (max-width: 1600px) {
+    .Herosection_Card-shadow {
+        height: 600px;
+    }
+
+    .Herosection_Image {
+        margin: 0 4.8rem;
+    }
+    
+    .Herosection_Image-img {
+        width: 180px;
+        height: 253px;
+    }
+}
+
+

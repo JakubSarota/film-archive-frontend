@@ -1,3 +1,8 @@
+:root {
+    --btn-clr-white: rgb(255, 255, 255, 1);
+    --btn-clr-grey: rgb(31, 31, 31, 0.9);
+}
+
 .btn {
     padding: 8px 20px;
     border-radius: 2px;
@@ -7,77 +12,61 @@
 }
 
     .btn--outline {
-        color: rgb(255, 255, 255);
+        color: var(--btn-clr-white);
         background-color: transparent;
         border-radius: 18px;
         padding: 15px 30px;
-        border: 3px solid;
+        border: 2px solid;
         margin: 0 20px 0 20px;
         transition: 250ms;
     }
 
     .btn--outline:hover {
-        /* border: 5px solid; */
-        padding-right: 100px;
-        transition: 250ms;
-    }
+            /* border: 5px solid; */
+            padding-right: 100px;
+            transition: 250ms;
+        }
 
-    .btn--outline:after:hover {
-        padding: 0px;
-        transition: 250ms;
-    }
+        .btn--outline:after:hover {
+            padding: 0px;
+            transition: 250ms;
+        }
 
     .btn--filled {
-        color: rgb(31, 31, 31, 0.9);
-        border-radius: 18px;
-        padding: 15px 30px;
-        border: 3px solid;
-        background-color: rgb(255,255,255, 1);
-        border-color: rgb(255,255,255, 1);
-        margin: 0 20px 0 20px;
-        transition: 250ms;
-    }
-
-    .btn--filled:hover {
-        padding-right: 100px;
-        transition: 250ms;
-    }
-
-    .btn--filled:after:hover {
-        padding: 0px;
-        transition: 250ms;
-    }
-
-
-    .btn--medium--slide {
-            display: flex;
-            position: relative;
-            right: -1px;
-            padding: 8px 20px;
-            font-size: 16px;
+            color: var(--btn-clr-grey);
+            border-radius: 18px;
+            padding: 15px 30px;
+            border: 3px solid;
+            background-color: var(--btn-clr-white);
+            border-color: var(--btn-clr-white);
+            margin: 0 20px 0 20px;
+            transition: 250ms;
         }
 
-        .btn--medium--slide:hover {
-            color: rgb(28, 27, 27);
-            background: rgba(255, 255, 255, 0);
-            transition: all 0.3s ease-out;
+        .btn--filled:hover {
+            padding-right: 100px;
+            transition: 250ms;
         }
+
+        .btn--filled:after:hover {
+            padding: 0px;
+            transition: 250ms;
+        }
+
 
     .btn--normal {
         font-weight: bold;
         width: 200px;
         color: rgb(17, 17, 17, 1);
-        
-        border-color: rgb(194, 86, 86);
         border-radius: 1px;
         padding: 15px 30px;
         border: 2px solid;
-        margin: 20px 20px 0 20px;
+        margin: 20px 0 20px 0;
         transition: 450ms ease;
     }
 
     .btn--normal:hover {
-        color: rgb(255, 255, 255, 1);
+        color: var(--btn-clr-white);
         border-color: rgba(44, 43, 43, 0.5);
         background-color: rgb(28, 27, 27, 1);
         transition: 450ms ease;

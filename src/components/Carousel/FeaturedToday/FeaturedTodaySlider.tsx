@@ -47,7 +47,7 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
                     return(
                         <div className="ImageSlider">
                             <div className={index === current ? 'slide active' : 'slide'} key={index}>                            
-                                <li>
+                                <li className="test">
                                     <Link to='/'>
                                         <div className="image-slider">
                                             <img src={slide.image} className='image' />

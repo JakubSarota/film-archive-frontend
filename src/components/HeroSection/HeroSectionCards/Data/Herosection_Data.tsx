@@ -22,6 +22,18 @@ const Herosection_Data = [
         path: '',
         name: 'John Wick',
         year: '2014'
+    },
+    {
+        src: 'https://i.pinimg.com/564x/b5/23/4c/b5234c28d1b357e13e116a7b52c9e315.jpg',
+        path: '',
+        name: 'The Owl House',
+        year: '2019'
+    },
+    {
+        src: 'https://i.pinimg.com/564x/d4/07/08/d40708509cf047a1942800eabe8306b2.jpg',
+        path: '',
+        name: 'Eternals',
+        year: '2021'
     }
 ]
 
