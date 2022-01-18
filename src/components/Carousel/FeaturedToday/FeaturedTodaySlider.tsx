@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import  { Link } from 'react-router-dom'
 import { Button } from '../../Buttons/Button'
-import { SliderData } from './FeaturedTodayData'
+import { FeaturedTodayData } from './FeaturedTodayData'
 import Slider from 'react-slick'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
-import { AiOutlineStar, AiFillStar, AiOutlinePlayCircle } from 'react-icons/ai'
+import { AiFillStar, AiOutlinePlayCircle } from 'react-icons/ai'
 import './FeaturedTodaySlider.css'
 
 
@@ -31,7 +31,6 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
     const settings = {
         infinite: true,
         speed: 300,
-        // slidesToShow: 5,
         centerMode: true,
         touchMove: false,
         variableWidth: true,
@@ -43,11 +42,11 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
     return (
         <section className="container-slider">
             <Slider {...settings}>
-                {SliderData.map((slide, index) => {
+                {FeaturedTodayData.map((slide, index) => {
                     return(
                         <div className="ImageSlider">
                             <div className={index === current ? 'slide active' : 'slide'} key={index}>                            
-                                <li className="test">
+                                <li className="image-slider-row">
                                     <Link to='/'>
                                         <div className="image-slider">
                                             <img src={slide.image} className='image' />

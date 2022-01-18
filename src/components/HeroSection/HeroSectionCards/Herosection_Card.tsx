@@ -15,10 +15,9 @@ export default function Herosection_Card() {
                 <div className="Herosection_Card_title-column">
                     <Link to='/' className="Herosection_Card_title-content">
                         <h2>BEST IN THIS YEAR</h2>
-                        {/* <IoIosArrowForward className='Herosection_Card-icon'/> */}
+                        <IoIosArrowForward className='Herosection_Card-icon'/>
                     </Link>
                 </div>
-
 
                 <div className="Herosection_Card-column">
                     <HerosectionCarousel image={HerosectionData}/>

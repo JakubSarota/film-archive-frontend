@@ -1,4 +1,4 @@
-export const SliderData = [
+export const FeaturedTodayData = [
     {
         path: '',
         image: 'https://i.pinimg.com/564x/b5/23/4c/b5234c28d1b357e13e116a7b52c9e315.jpg',

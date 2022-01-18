@@ -14,10 +14,17 @@ const Herosection_Card_Carousel = ({image} : {image: any}) => {
         slidesToShow: 4,
         speed: 500,
         accessibility: false,
+        autoplay: true,
+        autoplaySpeed: 10000,
         arrows: false,
-        focusOnSelect: true,
         touchMove: false,  
         responsive: [
+            {
+                breakpoint: 1260,
+                    settings: {
+                    slidesToShow: 3,
+                }
+            },
             {
                 breakpoint: 960,
                     settings: {
