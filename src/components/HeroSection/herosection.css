@@ -71,5 +71,19 @@
                                     left: 25%;
                                 }
 
+@media screen and (max-width: 960px) {
+    .hero-conteinter {
+                margin-bottom: -50%;
+                width: 80%;
+            }
+            .hero-conteinter > h1 {
+                        padding-bottom: 25px;
+                        position: relative;
+                        font-size: 40px;
+                    }
 
+                    h3 {
+                        font-size: 18px;
+                    }
+}
 

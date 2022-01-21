@@ -1,0 +1,125 @@
+.ExploreImage {
+    display: table-caption;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255, 0.2);
+}
+    .ExploreImage-link {
+            text-decoration: none!important; 
+        }
+
+        .ExploreImage-element {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                }
+
+                .ExploreImage-image {
+                    position: relative;
+                    display: block;
+                    object-fit: cover;
+                    width: 245px;
+                    height: 353px;
+                    object-fit: cover;
+                    transition: 0.25s linear;
+                }
+
+                .ExploreImage-image:hover {
+                    transform: scale(1.05);
+                }
+
+                .ExploreImage-underline {
+                            width: auto;
+                            display: flex;
+                            top: 10px;
+                            align-items: center;
+                            flex-direction: column;
+                            background-color: rgb(26, 26, 26, 1);                            
+                        }
+
+                        .ExploreImage-items {
+                            top: 5px;
+                            height: 110px;
+                            position: relative;
+                        }
+                        
+                        .ExploreImage-title {
+                            position: sticky;
+                            font-size: 18px;
+                            color: rgb(255, 255, 255, 1);
+                        }
+
+                        .ExploreImage-rate {
+                            display: flex;
+                            justify-content: center;
+                            color: rgb(212, 175, 55, 1);
+                            font-size: 20px;
+                        }
+
+                        .ExploreImage-button {
+                            padding: 10px 30px;
+                            text-decoration: none;
+                            display: flex;
+                            align-items: center;
+                            display: flex;
+                            cursor: pointer;
+                        }
+
+.left-arrow-explore {
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    font-size: 3rem;
+    color: rgb(212, 175, 55, 1);
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    transition: 450ms ease;
+}
+
+.right-arrow-explore {
+    position: absolute;
+    top: 150px;
+    right: 5px;
+    font-size: 3rem;
+    color: rgb(212, 175, 55, 1);
+    z-index: 1;
+    cursor: pointer;
+    user-select: unset;
+    transition: 450ms ease;
+}
+
+.left-arrow-explore:hover, .right-arrow-explore:hover {
+    transition: 450ms ease;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 1366px) {
+    .slick-slider {
+        margin: 0 10px;
+    }
+
+    .ExploreImage-image {
+        width: 210px;
+        height: 315px;
+    }
+    
+    .ExploreImage-items {
+        top: 5px;
+        height: 95px;
+    }
+
+    .ExploreImage-title {
+        font-size: 16px;
+    }
+
+    .ExploreImage-rate {
+        font-size: 18px;
+    }
+
+    .ExploreImage-button {
+        padding: 8px 22px;
+    }
+}
+
+

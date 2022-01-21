@@ -7,18 +7,18 @@ import './Explore.css'
 
 const Explore = ({slides} : {slides: any}) => {
     const [current, setCurrent] = useState(0) 
-    
+
     const NextArrow = ({onClick}: any) => {
         return (
-          <div className="arrow next" onClick={onClick}>
-                <FaArrowAltCircleRight className="right-arrow"/>
+          <div className="right-arrow-explore" onClick={onClick}>
+                <FaArrowAltCircleRight/>
           </div>
         );
     };
 
     const PrevArrow = ({onClick}: any) => {
         return (
-          <div className="left-arrow" onClick={onClick}>
+          <div className="left-arrow-explore" onClick={onClick}>
             <FaArrowAltCircleLeft/>
           </div>
         );
@@ -27,25 +27,35 @@ const Explore = ({slides} : {slides: any}) => {
 
     const settingsCard = {  
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 6,
+        slidesToScroll: 6,
         speed: 500,
         accessibility: false,
-        arrows: false,
+        arrows: true,
         touchMove: false,  
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         beforeChange: (current: any, next: any) => setCurrent(next),
         responsive: [
             {
-                breakpoint: 1260,
+                breakpoint: 1600,
                     settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 5,
+                    slidesToScroll: 5
+                }
+            },
+            {
+                breakpoint: 1280,
+                    settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
                 }
             },
             {
                 breakpoint: 960,
                     settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1, 
+                    slidesToScroll: 1
                 }
             },
         ]
@@ -55,7 +65,7 @@ const Explore = ({slides} : {slides: any}) => {
         <SliderCard {...settingsCard}>
             {ExploreData.map((image, index) => {
                 return(
-                    <ExploreIamge 
+                    <ExploreIamge key={index}
                         path={image.path}
                         src={image.image}
                         title={image.title}

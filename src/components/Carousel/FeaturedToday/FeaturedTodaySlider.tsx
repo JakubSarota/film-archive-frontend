@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import  { Link } from 'react-router-dom'
-import { Button } from '../../Buttons/Button'
 import { FeaturedTodayData } from './FeaturedTodayData'
 import Slider from 'react-slick'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
@@ -14,8 +13,8 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
 
     const NextArrow = ({onClick}: any) => {
         return (
-          <div className="arrow next" onClick={onClick}>
-                <FaArrowAltCircleRight className="right-arrow"/>
+          <div className="right-arrow" onClick={onClick}>
+                <FaArrowAltCircleRight/>
           </div>
         );
     };
@@ -40,14 +39,13 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
     };
 
     return (
-        <section className="container-slider">
             <Slider {...settings}>
                 {FeaturedTodayData.map((slide, index) => {
                     return(
                         <div className="ImageSlider">
                             <div className={index === current ? 'slide active' : 'slide'} key={index}>                            
                                 <li className="image-slider-row">
-                                    <Link to='/'>
+                                    <Link to={slide.path}>
                                         <div className="image-slider">
                                             <img src={slide.image} className='image' />
                                         </div>
@@ -55,9 +53,7 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
                                     <div className="image-text">
                                         <li className="image-text--items">
                                             <a className='title-text'>{slide.title}</a>
-                                            
-                                            <a className='title-rate'><AiFillStar/>{slide.rate}</a>
-                                            
+                                            <a className='title-rate'><AiFillStar/>{slide.rate}</a>                                            
                                             <a href={slide.trailer} target='__blank' className='button-text'>
                                                 <button className='slide-button'>
                                                     <h4>Watch trailer</h4>
@@ -72,7 +68,6 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
                     )
                 })}                
             </Slider>
-        </section>
     )
 }
 

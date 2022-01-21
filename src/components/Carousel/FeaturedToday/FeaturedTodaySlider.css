@@ -16,12 +16,14 @@
         }
 
         .slide {
+            pointer-events: none;
             transform: scale(0.70);
             transition: 300ms ease;
             opacity: 0.4;
         }
 
         .active {
+            pointer-events: auto;
             transform: none;
             transition: 300ms ease;
             opacity: 1;
@@ -43,11 +45,6 @@
             transition: 450ms ease;
         }
 
-        .right-arrow:hover {
-            transition: 450ms ease;
-            color: rgb(212, 175, 55, 1);
-        }
-
     .left-arrow {
                 position: absolute;
                 top: 260px;
@@ -60,7 +57,7 @@
                 transition: 450ms ease;
             }
 
-            .left-arrow:hover {
+            .left-arrow:hover, .right-arrow:hover {
                 transition: 450ms ease;
                 color: rgb(212, 175, 55, 1);
             }
@@ -74,8 +71,6 @@
         .image {    
             max-width: 100%;
             max-height: 100%;
-            /* width: 350px;
-            height: 550px; */
         }
 
     .image-text {
@@ -150,7 +145,7 @@
         }
 
         .slide-button {
-                        padding: 8px 16px;
+                        padding: 8px 24px;
                         margin: 5px;
                     }
 

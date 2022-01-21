@@ -67,8 +67,27 @@
 
     .btn--normal:hover {
         color: var(--btn-clr-white);
-        border-color: rgba(44, 43, 43, 0.5);
+        border-color: rgb(17, 17, 17, 1);
         background-color: rgb(28, 27, 27, 1);
+        transition: 450ms ease;
+    }
+
+    .btn--normal--dark {
+        font-weight: bold;
+        width: 200px;
+        background-color: transparent;
+        color: var(--btn-clr-white);
+        border-radius: 1px;
+        padding: 15px 30px;
+        border: 2px solid;
+        margin: 20px 0 20px 0;
+        transition: 450ms ease;
+    }
+
+    .btn--normal--dark:hover {
+        color: rgb(17, 17, 17, 1);
+        border-color: rgba(255, 255, 255, 1);
+        background-color: var(--btn-clr-white);
         transition: 450ms ease;
     }
 

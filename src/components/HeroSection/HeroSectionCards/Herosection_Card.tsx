@@ -13,7 +13,7 @@ export default function Herosection_Card() {
                 <div className="Herosection_Card-background"/>
 
                 <div className="Herosection_Card_title-column">
-                    <Link to='/' className="Herosection_Card_title-content">
+                    <Link to='/test' className="Herosection_Card_title-content">
                         <h2>BEST IN THIS YEAR</h2>
                         <IoIosArrowForward className='Herosection_Card-icon'/>
                     </Link>
