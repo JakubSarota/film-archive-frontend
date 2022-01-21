@@ -53,7 +53,6 @@
                     position: relative;
                     display: inline;
                     top: 5px;
-                   
                 }
 
                 .navbar-header-link--logo:hover {
@@ -84,7 +83,7 @@
                     align-items: center;
                 }
 
-                .button-item {
+                .button-items {
                     display: flex;
                     /* margin: 0 10px 0 10px; */
                 }
@@ -134,7 +133,7 @@
                     font-size: 20px;
                 }
         
-                .nav-text a {
+                .nav-text a, .nav-text-mobile a {
                     text-decoration: none;
                     color: #f5f5f5;
                     width: 95%;
@@ -156,9 +155,14 @@
                     font-size: 20px;
                 }
 
+                .nav-text-mobile {
+                    display: none;
+                }
+
 @media screen and (max-width: 1600px) {
     .navbar-header--logo {
         position: inherit;
+        margin-left: 45px;
         /* padding-right: 75rem; */
     }
 
@@ -173,5 +177,52 @@
 
     .logo-icon {
         /* display: none; */
+    }
+}
+
+@media screen and (max-width: 960px) {
+    /* .button-items {
+        display: none;
+    } */
+
+    .button-items > li:nth-child(-n+4) {
+        display: none;
+    }
+
+    .button-items > li {
+        position: relative;
+        top: 15px;
+    }
+
+    .navbar.active {
+        position: sticky;
+        height: 100px;
+    }
+
+    .navbar-header-link--logo {
+        position: absolute;
+        top: 10px;
+    }
+    
+    .navbar-header-link--logo > h2 {
+        font-size: 22px;
+    }
+
+    .logo-icon {
+        font-size: 32px;
+    }
+
+    .nav-text-mobile {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 8px 0px 0px 25px;
+        list-style: none;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    span {
+        margin-left: 0px;
     }
 }

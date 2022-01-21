@@ -92,5 +92,7 @@
 }
 
 @media screen and (max-width: 960) {
-    
+    .Card { 
+        top: 20px;
+    }
 }

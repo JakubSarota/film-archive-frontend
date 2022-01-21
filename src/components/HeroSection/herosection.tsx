@@ -6,7 +6,6 @@ export default function Herosection() {
     return (
         <div className="home">
             <div className='hero-conteinter'>
-                
                 <h1>FILM ARCHIVE</h1>
                     <hr className='line-under-text'/>
                     <div className='hero-conteinter--items'>

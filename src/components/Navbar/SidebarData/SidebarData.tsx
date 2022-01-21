@@ -2,6 +2,28 @@ import React from 'react'
 import * as RiIcons from 'react-icons/ri'
 
 export const SidebarData = [
+    /*text for mobile devices*/
+    {
+        title: 'Search',
+        path: '/',
+        cName: 'nav-text-mobile'
+    },
+    {
+        title: 'News',
+        path: '/',
+        cName: 'nav-text-mobile'
+    },
+    {
+        title: 'Watchlist',
+        path: '/',
+        cName: 'nav-text-mobile'
+    },
+    {
+        title: 'Sign up',
+        path: '/',
+        cName: 'nav-text-mobile'
+    },
+    /*Normal text in menu-bar*/
     {
         title: 'Movies',
         path: '/',
@@ -44,5 +66,4 @@ export const SidebarData = [
         path: '/',
         cName: 'nav-text'
     }
-    
 ]

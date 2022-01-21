@@ -5,7 +5,7 @@ import * as FaIcons from 'react-icons/fa'
 import * as AiIcons from 'react-icons/ai'
 import * as RiIcons from 'react-icons/ri'
 import { useEffect, useState } from 'react'
-import { SidebarData } from '../SidebarData/SidebarData'
+import { SidebarData } from './SidebarData/SidebarData'
 
 
 export default function Navbar() {
@@ -41,7 +41,7 @@ export default function Navbar() {
                 </form>
 
                 <div className='navbar-header--buttons'>      
-                    <div className='button-item'>
+                    <div className='button-items'>
                         <li>
                             <Button link='/test' buttonStyle='btn--outline' buttonSize='btn--medium'>
                                 <AiIcons.AiOutlineSearch/>
@@ -57,7 +57,6 @@ export default function Navbar() {
                                 <a>Watchlist</a>
                             </Button>
                         </li>
-                    
                         <li>
                             <Button link='/test' buttonStyle='btn--filled' buttonSize='btn--medium'>
                                 <a>Sign up</a>
