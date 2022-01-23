@@ -1,14 +1,11 @@
 import Images from './Herosection_Image'
-import HerosectionData from './Data/Herosection_Data'
+import HerosectionData from './Data/Herosection_Data.json'
 import SliderCard from 'react-slick'
 import { useState } from 'react'
 
-const Herosection_Card_Carousel = ({image} : {image: any}) => {
+const Herosection_Card_Carousel = () => {
     const [current, setCurrent] = useState(0) 
     
-    const length = image.length
-    console.log(length)
-
     const settingsCard = {  
         infinite: true,
         slidesToShow: 4,

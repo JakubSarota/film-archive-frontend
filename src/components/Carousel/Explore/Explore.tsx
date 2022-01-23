@@ -1,11 +1,11 @@
 import SliderCard from 'react-slick'
 import { useState } from 'react'
-import { ExploreData } from './ExploreData'
+import ExploreData from './ExploreData.json'
 import ExploreIamge from './ExploreImage'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import './Explore.css'
 
-const Explore = ({slides} : {slides: any}) => {
+const Explore = () => {
     const [current, setCurrent] = useState(0) 
 
     const NextArrow = ({onClick}: any) => {
@@ -47,15 +47,16 @@ const Explore = ({slides} : {slides: any}) => {
             {
                 breakpoint: 1280,
                     settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4
+                        slidesToShow: 4,
+                        slidesToScroll: 4
                 }
             },
             {
                 breakpoint: 960,
                     settings: {
-                    slidesToShow: 1, 
-                    slidesToScroll: 1
+                        touchMove: true,
+                        slidesToShow: 1, 
+                        slidesToScroll: 1
                 }
             },
         ]

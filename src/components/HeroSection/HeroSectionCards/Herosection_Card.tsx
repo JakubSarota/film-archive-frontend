@@ -3,7 +3,6 @@ import './Herosection_Card.css'
 import  { Link } from 'react-router-dom'
 // import Images from './Herosection_Image'
 import { IoIosArrowForward } from 'react-icons/io'
-import HerosectionData from './Data/Herosection_Data'
 import HerosectionCarousel from './Herosection_Card_Carousel'
 
 export default function Herosection_Card() {
@@ -20,7 +19,7 @@ export default function Herosection_Card() {
                 </div>
 
                 <div className="Herosection_Card-column">
-                    <HerosectionCarousel image={HerosectionData}/>
+                    <HerosectionCarousel/>
                 </div>
             </div>
         </div>

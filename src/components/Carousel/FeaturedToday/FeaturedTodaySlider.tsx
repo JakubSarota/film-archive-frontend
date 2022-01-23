@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import  { Link } from 'react-router-dom'
-import { FeaturedTodayData } from './FeaturedTodayData'
+import FeaturedTodayData from './FeaturedTodayData.json'
 import Slider from 'react-slick'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { AiFillStar, AiOutlinePlayCircle } from 'react-icons/ai'
 import './FeaturedTodaySlider.css'
 
 
-const ImageSlider = ( {slides} : {slides: any} ) => {
+const ImageSlider = () => {
     
     const [current, setCurrent] = useState(0)
 
@@ -35,7 +35,16 @@ const ImageSlider = ( {slides} : {slides: any} ) => {
         variableWidth: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
-        beforeChange: (current: any, next: any) => setCurrent(next)
+        beforeChange: (current: any, next: any) => setCurrent(next),
+        responsive: [
+            {
+                breakpoint: 960,
+                    settings: {
+                        touchMove: true,
+                    
+                }
+            },
+        ]
     };
 
     return (
