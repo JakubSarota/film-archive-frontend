@@ -43,7 +43,7 @@ export default function Navbar() {
                 <div className='navbar-header--buttons'>      
                     <div className='button-items'>
                         <li>
-                            <Button link='/test' buttonStyle='btn--outline' buttonSize='btn--medium'>
+                            <Button link='/test' buttonStyle='btn--outline-search' buttonSize='btn--medium'>
                                 <AiIcons.AiOutlineSearch/>
                             </Button>
                         </li>

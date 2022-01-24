@@ -1,41 +1,60 @@
 import './Reviews.css'
-// import { ReviewData } from'./ReviewsData'
 import Slider from 'react-slick'
-import { useEffect, useState } from 'react'
-// import { ReviewData } from './ReviewsData.json'
+import { AiFillStar, AiOutlinePlayCircle } from 'react-icons/ai'
+import ReviewData from './ReviewsData.json'
+import { Link } from 'react-router-dom'
 
+const settings = {
+  infinite: true,
+  slidesToShow: 2,
+  speed: 500,
+  accessibility: false,
+  arrows: false,
+  touchMove: false, 
+  responsive: [
+    {
+        breakpoint: 960,
+            settings: {
+              slidesToShow: 1,
+        }
+    },
+]
+}
 
-export default function Reviews() {
-
-  // const [data, setData] = useState([])
-
-  // const getData = () => {fetch('./ReviewsData.json', {
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //         'Accept': 'application/json'
-  //       }
-  //   })
-  //   .then(function (response) {
-  //     console.log(response)
-  //     return response.json()
-  //   })
-  //   .then(function (myjson) {
-  //     console.log(myjson)
-  //     return myjson.json()
-  //   })
-  // }
-
-  // useEffect(()=>{
-  //   getData()
-  // }, [])
-  // console.log('dlugosc '+getData.length)
+const Reviews = () => {
   return(
-      <div className="review-container">
-          <div className="review-container-image">
-            <div className="review-container-feature">
-              
-            </div>
+    <Slider {...settings}>
+      {ReviewData.map((data, index) => {
+        return(
+          <div className="review-container">
+            {/*Content*/}
+              <div className="review-container-feature">
+                  <Link to={data.linktomovie} className="review-name">
+                      <h4 >{data.moviename}</h4>
+                  </Link>
+                  <li>
+                    <a className='review-text'>{data.content}</a>
+                  </li>
+              </div>
+              {/*User*/}
+              <div className="review-container-user">
+                <Link to={data.linktoprofile}>
+                  <div className="review-avatar">
+                    <img src={data.profileimage} className="avatar__image"/>
+                  </div>
+                </Link>
+                <div className="username-rate">
+                  <Link to={data.linktoprofile} className='review-username'>
+                    <a>{data.username}</a>
+                  </Link>
+                  <a className='review-rate'><AiFillStar/>{'\t'+data.rate}</a>
+                </div>
+              </div>
           </div>
-      </div>
+        )})
+      }
+    </Slider>
   )
 }
+
+export default Reviews

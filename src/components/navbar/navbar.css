@@ -102,6 +102,7 @@
                     top: 0;
                     z-index: 2;
                     transition: 550ms;
+                    overflow: auto;
                 }
 
                 .nav-menu-items {
@@ -179,9 +180,14 @@
         top: 15px;
     }
 
+    .navbar {
+        top: 10px;
+    }
+
     .navbar.active {
         position: sticky;
-        height: 95px;
+        top: -5px;
+        height: 80px;
     }
 
     .navbar-header-link--logo {
@@ -190,7 +196,7 @@
     }
     
     .navbar-header-link--logo > h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .navbar-header-link--logo:hover {
@@ -215,6 +221,5 @@
     span {
         margin-left: 0px;
     }
-
     
 }

@@ -11,26 +11,46 @@
     cursor: pointer;
 }
 
-    .btn--outline {
-        color: var(--btn-clr-white);
-        background-color: transparent;
-        border-radius: 18px;
-        padding: 15px 30px;
-        border: 2px solid;
-        margin: 0 20px 0 20px;
-        transition: 250ms;
-    }
 
-    .btn--outline:hover {
-            /* border: 5px solid; */
-            padding-right: 100px;
-            transition: 250ms;
+.btn--outline {
+    color: var(--btn-clr-white);
+    background-color: transparent;
+    border-radius: 18px;
+    padding: 15px 30px;
+    border: 2px solid;
+    margin: 0 20px 0 20px;
+    transition: 250ms;
         }
 
-        .btn--outline:after:hover {
-            padding: 0px;
-            transition: 250ms;
-        }
+        .btn--outline:hover {
+                background-color: rgba(255, 255, 255, 0.15);
+                transition: 250ms;
+            }
+
+            .btn--outline:after:hover {
+                padding: 0px;
+                transition: 250ms;
+            }
+
+    .btn--outline-search {
+                color: var(--btn-clr-white);
+                background-color: transparent;
+                border-radius: 18px;
+                padding: 15px 30px;
+                border: 2px solid;
+                margin: 0 20px 0 20px;
+                transition: 250ms;
+            }
+
+            .btn--outline-search:hover {
+                    padding-right: 100px;
+                    transition: 250ms;
+                }
+
+                .btn--outline-search:after:hover {
+                    padding: 0px;
+                    transition: 250ms;
+                }
 
     .btn--filled {
             color: var(--btn-clr-grey);
@@ -47,8 +67,8 @@
 
         .btn--filled:hover {
             color: var(--btn-clr-white);
-            background-color: rgb(212, 175, 55, 1);
-            border-color: rgb(212, 175, 55, 1);
+            background-color: rgb(212, 175, 55);
+            border-color: rgb(212, 175, 55);
         }
 
         .btn--filled:after:hover {
