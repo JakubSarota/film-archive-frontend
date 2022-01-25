@@ -2,15 +2,17 @@
     {
         "linktoprofile": "/test",
         "linktomovie": "/test",
+        "linktoreview": "/test",
         "profileimage": "https://pbs.twimg.com/profile_images/1430412518690803712/RSvHNFRm_400x400.jpg",
         "username": "Geralt",
         "moviename": "The Witcher",
-        "content": "Undeniably a great tv show, beautiful cinematography, amazing costume work, and super acting.",
+        "content": "Oddly enough I took my sweet time getting around to watching The Witcher as it was based on a computer game, and those movies then to do quite poorly. But after several people telling me that I, as an avid player of role-playing games, should sit down and watch The Witcher, I eventually did.",
         "rate": 10
     },
     {
         "linktoprofile": "/test",
         "linktomovie": "/test",
+        "linktoreview": "/test",
         "profileimage": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/6f/6f98e9c728650fa5a1178cf47ef42ae2a77a9a53_full.jpg",
         "username": "Jacob",
         "moviename": "Lupin",
@@ -20,7 +22,8 @@
     {
         "linktoprofile": "/test",
         "linktomovie": "/test",
-        "profileimage": "https://static.wikia.nocookie.net/residentevil/images/b/b7/Leon_PS_avatar.png/revision/latest/scale-to-width-down/250?cb=20180818115632",
+        "linktoreview": "/test",
+        "profileimage": "https://i.pinimg.com/280x280_RS/ff/6e/81/ff6e8136fda6a9ccb3fcf1b01e3cad76.jpg",
         "username": "Leon",
         "moviename": "Eternals",
         "content": "Undeniably a great tv show, beautiful cinematography, amazing costume work, and super acting.",

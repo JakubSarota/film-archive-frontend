@@ -38,12 +38,26 @@
             top: 260px;
             right: 75px;
             font-size: 3rem;
-            color: rgb(31, 31, 31, 1);
             z-index: 1;
             cursor: pointer;
             user-select: unset;
-            transition: 450ms ease;
         }
+
+        .rigt-arrow-background {
+                background-color: rgb(225, 185, 50);
+                width: 50px;
+                height: 50px;
+                display: flex;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                transition: 450ms ease;
+            }
+
+            .rigt-arrow-background:hover, .right-arrow-icon:hover {
+                filter: brightness(125%);
+                transition: 450ms ease;
+            }
 
     .left-arrow {
                 position: absolute;

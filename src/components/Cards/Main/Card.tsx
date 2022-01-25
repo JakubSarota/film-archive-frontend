@@ -2,6 +2,7 @@ import { Button } from '../../Buttons/Button'
 import FeaturedToday  from '../../Carousel/FeaturedToday/FeaturedTodaySlider'
 import Explore from '../../Carousel/Explore/Explore'
 import Reviews from '../../Carousel/Reviews/Reviews'
+import FanFavorite from '../../Carousel/FanFavorite/FanFavorite'
 import './Card.css'
 
 export default function Card() {
@@ -24,10 +25,16 @@ export default function Card() {
                 </div>
             </div>
             <div className='Card__slider-reviews'>
-                <h1>Reviews</h1>
+                <h1>Users reviews</h1>
                 <Reviews/>
             </div>
-
+            <div className='Card__slider-fanfavorite'>
+                <h1>Fan Favorites</h1>
+                <FanFavorite/>
+                <Button link='/test' buttonStyle='btn--normal' buttonSize='btn--medium'>
+                    <a>Get more</a>
+                </Button>
+            </div>
         </div>
     )
 }

@@ -2,11 +2,14 @@ import './Reviews.css'
 import Slider from 'react-slick'
 import { AiFillStar, AiOutlinePlayCircle } from 'react-icons/ai'
 import ReviewData from './ReviewsData.json'
+import ReadMore from '../../ReadMore/ReadMore'
 import { Link } from 'react-router-dom'
 
 const settings = {
   infinite: true,
   slidesToShow: 2,
+  autoplay: true,
+  autoplaySpeed: 9000,
   speed: 500,
   accessibility: false,
   arrows: false,
@@ -30,10 +33,13 @@ const Reviews = () => {
             {/*Content*/}
               <div className="review-container-feature">
                   <Link to={data.linktomovie} className="review-name">
-                      <h4 >{data.moviename}</h4>
+                      <h4>{data.moviename}</h4>
                   </Link>
                   <li>
-                    <a className='review-text'>{data.content}</a>
+                    <a className='review-text'>
+                      {(data.content).slice(0,92)}
+                      <Link to={data.linktoreview} className='review-link'>...read more</Link>
+                    </a>
                   </li>
               </div>
               {/*User*/}

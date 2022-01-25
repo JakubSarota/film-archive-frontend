@@ -21,7 +21,7 @@ export default function Navbar() {
     }
     
     const changeBackground = () => {
-        console.log(window.scrollY)
+        // console.log(window.scrollY)
         if(window.scrollY >=80) {
             setNavbar(true)
         } else {

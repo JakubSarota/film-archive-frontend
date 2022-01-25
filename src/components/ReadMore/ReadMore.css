@@ -1,0 +1,18 @@
+.text {
+    display: block;
+    text-align: justify;
+    top: 10%;
+    left: 23%;
+    width: 50%;
+}
+
+.readorhide {
+    color: rgba(56, 56, 56, 0.8);
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.readorhide:hover {
+    color: rgb(12, 12, 12);
+    transition: 250ms;
+}

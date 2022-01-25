@@ -1,0 +1,21 @@
+.footer {
+            position: relative;
+            top: 60px;
+            background-color: rgb(31, 31, 31);
+            height: 140px;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        span {
+                    position: relative;
+                    text-align: center; 
+                    position: flex;
+                    align-self: flex-end;
+                    top: 80px;
+                }
+
+                .footer-text {
+                    color: rgb(255,255,255,1);
+                    font-size: 16px;
+                }

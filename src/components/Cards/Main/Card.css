@@ -81,6 +81,21 @@
             text-decoration-color: rgb(212, 175, 55, 1);
         }
 
+.Card__slider-fanfavorite {
+            position: relative;
+            text-align: -webkit-center;
+            height: 720px;
+            top: 150px;
+        }
+
+        .Card__slider-fanfavorite > h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(55, 55, 55, 1);
+            text-decoration: underline 2px;
+            text-decoration-color: rgb(212, 175, 55, 1);
+        }
+
+
 @media screen and (max-width: 1366px) {
     .Card__slider-explore {
         position: relative;

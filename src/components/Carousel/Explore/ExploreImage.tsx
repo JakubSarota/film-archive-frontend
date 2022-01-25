@@ -13,7 +13,7 @@ export default function ExploreImage({path, src, title, rate, link} : {path: str
             <div className="ExploreImage-underline">
                 <li className="ExploreImage-items">       
                     <a className="ExploreImage-title">{title}</a>
-                    <a className="ExploreImage-rate">{rate}<AiFillStar/></a>
+                    <a className="ExploreImage-rate"><AiFillStar/>{rate}</a>
                     <a href={link} target='__blank' className='button-text'>
                         <button className='ExploreImage-button'>
                             <h4>Watch trailer</h4>

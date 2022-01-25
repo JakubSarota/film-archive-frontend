@@ -5,17 +5,17 @@ export const SidebarData = [
     /*text for mobile devices*/
     {
         title: 'Search',
-        path: '/',
+        path: '/test',
         cName: 'nav-text-mobile'
     },
     {
         title: 'News',
-        path: '/',
+        path: '/test',
         cName: 'nav-text-mobile'
     },
     {
         title: 'Watchlist',
-        path: '/',
+        path: '/test',
         cName: 'nav-text-mobile'
     },
     {
@@ -26,13 +26,13 @@ export const SidebarData = [
     /*Normal text in menu-bar*/
     {
         title: 'Movies',
-        path: '/',
+        path: '/test',
         icon: <RiIcons.RiMovie2Line/>,
         cName: 'nav-text'
     },
     {
         title: 'Best movies',
-        path: '/',
+        path: '/test',
         cName: 'nav-text'
     },
     {
