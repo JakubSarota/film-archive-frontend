@@ -3,31 +3,38 @@
     margin-top: 25px;
 }
 
-.left-arrow-fanfavorite {
+.right-arrow__fanfavorite {
     position: absolute;
-    top: 150px;
-    left: 5px;
-    font-size: 3rem;
-    color: rgb(212, 175, 55, 1);
-    z-index: 1;
-    cursor: pointer;
-    user-select: none;
-    transition: 450ms ease;
-}
-
-.right-arrow-fanfavorite {
-    position: absolute;
-    top: 150px;
+    top: 180px;
     right: 5px;
     font-size: 3rem;
-    color: rgb(212, 175, 55, 1);
     z-index: 1;
     cursor: pointer;
     user-select: unset;
-    transition: 450ms ease;
 }
 
-.left-arrow-fanfavorite:hover, .right-arrow-fanfavorite:hover {
-    transition: 450ms ease;
-    color: rgb(36, 36, 36);
+.left-arrow__fanfavorite {
+    position: absolute;
+    top: 180px;
+    left: 5px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: unset;
 }
+
+.rigt-arrow-background__fanfavorite, .left-arrow-background__fanfavorite {
+        background-color: rgb(225, 185, 50);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: 450ms ease;
+    }
+
+    .rigt-arrow-background__fanfavorite:hover, .right-arrow-icon__fanfavorite:hover, .left-arrow-background__fanfavorite:hover, .left-arrow-icon__fanfavorite:hover {
+        filter: brightness(125%);
+        transition: 450ms ease;
+    }

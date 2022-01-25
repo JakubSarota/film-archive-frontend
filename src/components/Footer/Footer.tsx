@@ -6,7 +6,7 @@ const year = new Date().getUTCFullYear();
 export default function Footer() {
     return <div className="footer">
         <div className="footer-container">
-            <span>
+            <span className="footer-element">
                 <p className="footer-text">Film Archive {year}</p>
             </span>
         </div>

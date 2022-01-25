@@ -65,34 +65,42 @@
                             cursor: pointer;
                         }
 
-.left-arrow-explore {
-    position: absolute;
-    top: 150px;
-    left: 5px;
-    font-size: 3rem;
-    color: rgb(212, 175, 55, 1);
-    z-index: 1;
-    cursor: pointer;
-    user-select: none;
-    transition: 450ms ease;
-}
-
-.right-arrow-explore {
+.right-arrow__explore {
     position: absolute;
     top: 150px;
     right: 5px;
     font-size: 3rem;
-    color: rgb(212, 175, 55, 1);
     z-index: 1;
     cursor: pointer;
     user-select: unset;
-    transition: 450ms ease;
 }
 
-.left-arrow-explore:hover, .right-arrow-explore:hover {
-    transition: 450ms ease;
-    color: rgb(255, 255, 255, 0.8);
+.left-arrow__explore {
+    position: absolute;
+    top: 150px;
+    left: 5px;
+    font-size: 3rem;
+    z-index: 1;
+    cursor: pointer;
+    user-select: unset;
 }
+
+.rigt-arrow-background__explore, .left-arrow-background__explore {
+        background-color: rgb(225, 185, 50);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        transition: 450ms ease;
+    }
+
+    .rigt-arrow-background__explore:hover, .right-arrow-icon__explore:hover, .left-arrow-background__explore:hover, .left-arrow-icon__explore:hover {
+        filter: brightness(125%);
+        transition: 450ms ease;
+    }
+
 
 @media screen and (max-width: 1366px) {
     .slick-slider {

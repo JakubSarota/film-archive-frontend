@@ -3,7 +3,7 @@ import  { Link } from 'react-router-dom'
 import FeaturedTodayData from './FeaturedTodayData.json'
 import Slider from 'react-slick'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
-import { GrFormNext } from 'react-icons/gr'
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 import { AiFillStar, AiOutlinePlayCircle } from 'react-icons/ai'
 import './FeaturedTodaySlider.css'
 
@@ -25,7 +25,9 @@ const ImageSlider = () => {
     const PrevArrow = ({onClick}: any) => {
         return (
           <div className="left-arrow" onClick={onClick}>
-            <FaArrowAltCircleLeft/>
+                <div className="left-arrow-background">
+                    <GrFormPrevious className="left-arrow-icon"/>
+                </div>
           </div>
         );
     };

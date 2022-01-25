@@ -1,13 +1,13 @@
 .footer {
             position: relative;
-            top: 60px;
+            top: 140px;
             background-color: rgb(31, 31, 31);
             height: 140px;
             width: 100%;
             font-size: 14px;
         }
 
-        span {
+        .footer-element {
                     position: relative;
                     text-align: center; 
                     position: flex;

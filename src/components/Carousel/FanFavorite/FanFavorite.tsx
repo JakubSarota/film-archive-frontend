@@ -3,6 +3,7 @@ import FanFavoriteImage from '../Explore/ExploreImage'
 import FanFavoriteData from './FanFavoriteData.json'
 import Slider from 'react-slick'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 import './FanFavorite.css'
 
 const FanFavorite = () => {
@@ -10,25 +11,28 @@ const FanFavorite = () => {
 
     const NextArrow = ({onClick}: any) => {
         return (
-          <div className="right-arrow-fanfavorite" onClick={onClick}>
-                <FaArrowAltCircleRight/>
+          <div className="right-arrow__fanfavorite" onClick={onClick}>
+                <div className="rigt-arrow-background__fanfavorite">
+                    <GrFormNext className="right-arrow-icon__fanfavorite"/>
+                </div>
           </div>
         );
     };
 
     const PrevArrow = ({onClick}: any) => {
         return (
-          <div className="left-arrow-fanfavorite" onClick={onClick}>
-            <FaArrowAltCircleLeft/>
+          <div className="left-arrow__fanfavorite" onClick={onClick}>
+                <div className="left-arrow-background__fanfavorite">
+                    <GrFormPrevious className="left-arrow-icon__fanfavorite"/>
+                </div>
           </div>
         );
     };
 
-
     const settings = {  
         infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 6,
+        slidesToScroll: 6,
         speed: 500,
         accessibility: false,
         arrows: true,

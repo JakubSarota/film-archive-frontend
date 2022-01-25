@@ -3,6 +3,7 @@ import { useState } from 'react'
 import ExploreData from './ExploreData.json'
 import ExploreIamge from './ExploreImage'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
 import './Explore.css'
 
 const Explore = () => {
@@ -10,16 +11,20 @@ const Explore = () => {
 
     const NextArrow = ({onClick}: any) => {
         return (
-          <div className="right-arrow-explore" onClick={onClick}>
-                <FaArrowAltCircleRight/>
+          <div className="right-arrow__explore" onClick={onClick}>
+                <div className="rigt-arrow-background__explore">
+                    <GrFormNext className="right-arrow-icon__explore"/>
+                </div>
           </div>
         );
     };
 
     const PrevArrow = ({onClick}: any) => {
         return (
-          <div className="left-arrow-explore" onClick={onClick}>
-            <FaArrowAltCircleLeft/>
+          <div className="left-arrow__explore" onClick={onClick}>
+                <div className="left-arrow-background__explore">
+                    <GrFormPrevious className="left-arrow-icon__explore"/>
+                </div>
           </div>
         );
     };
