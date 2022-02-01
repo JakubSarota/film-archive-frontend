@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from '../components/Navbar/Navbar';
+import HeroSection from '../components/SignUpForm/Signup'
 
 export default function signup() {
     return (
-        <div className="Sign-up">
-            <h1>Signup</h1>
-        </div>
+        <React.Fragment>
+            <Navbar/>
+            <HeroSection/>
+        </React.Fragment>
     )
 }

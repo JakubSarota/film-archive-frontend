@@ -7,6 +7,7 @@ import * as RiIcons from 'react-icons/ri'
 import { useEffect, useState } from 'react'
 import { SidebarData } from './SidebarData/SidebarData'
 
+/*Links*/
 
 export default function Navbar() {
 
@@ -58,7 +59,7 @@ export default function Navbar() {
                             </Button>
                         </li>
                         <li>
-                            <Button link='/test' buttonStyle='btn--filled' buttonSize='btn--medium'>
+                            <Button link='/signup' buttonStyle='btn--filled' buttonSize='btn--medium'>
                                 <a>Sign up</a>
                             </Button>
                         </li>

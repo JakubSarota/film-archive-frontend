@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-.home {
+.home, .signup {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -17,10 +17,14 @@
   height: 100vh;
 }
 
-.home {
+.home, .signup {
   background-image: url('/images/image-1.jpg');
   background-repeat: repeat-x;
   background-size: cover;
   background-position: center;
   color: #fff;
+}
+
+.signup {
+  opacity: 0.85;
 }
