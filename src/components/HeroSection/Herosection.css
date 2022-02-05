@@ -1,0 +1,98 @@
+.hero-conteinter {
+            margin-bottom: -20%;
+            height: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-conteinter > h1 {
+            padding-bottom: 15px;
+            position: relative;
+            font-size: 80px;
+            
+        }
+
+        .line-under-text {
+            width: 540px;
+            height: 0.2rem;
+            border-radius: 100rem;
+            background-color: #fff;
+        }
+
+        .hero-conteinter--items {
+                    position: sticky;
+                    list-style-type: none;
+                    display: flex;
+                }
+
+                .hero-conteinter-link-items {
+                            box-sizing: border-box;
+                            align-items: flex-start;
+                            flex-direction: row;
+                            text-align: center;
+                            display: grid;
+                            margin: 16px;
+                            width: 160px;
+                        }
+
+                        .hero-conteinter-link {
+                            padding-top: 15px;
+                            font-size: 24px;
+                            text-decoration: none;
+                        }
+
+                        li { 
+                                    position: relative; 
+                                }
+
+                                h3 {
+                                    color: rgba(255, 255, 255, 1);
+                                    font-size: 22px;
+                                }
+
+                                h3:after {
+                                    background: none repeat scroll 0 0 transparent;
+                                    bottom: 0;
+                                    content: "";
+                                    display: block;
+                                    height: 2px;
+                                    left: 50%;
+                                    position: absolute;
+                                    background: #fff;
+                                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                                    width: 0;
+                                }
+
+                                h3:hover:after {
+                                    width: 50%;
+                                    left: 25%;
+                                }
+
+@media screen and (max-width: 960px) {
+    .hero-conteinter {
+                margin-bottom: -50%;
+                width: 80%;
+            }
+
+            .line-under-text {
+                width: 60%;
+            }
+
+            .hero-conteinter--items {
+                display: none;
+            }
+
+            .hero-conteinter > h1 {
+                        padding-bottom: 25px;
+                        position: relative;
+                        font-size: 40px;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                    }
+}
+
