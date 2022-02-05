@@ -1,0 +1,129 @@
+:root {
+    --btn-clr-white: rgb(255, 255, 255, 1);
+    --btn-clr-grey: rgb(31, 31, 31, 0.9);
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn--outline {
+    color: var(--btn-clr-white);
+    background-color: transparent;
+    border-radius: 18px;
+    padding: 15px 30px;
+    border: 2px solid;
+    margin: 0 20px 0 20px;
+    transition: 250ms;
+        }
+
+        .btn--outline:hover {
+                background-color: rgba(255, 255, 255, 0.15);
+                transition: 250ms;
+            }
+
+            .btn--outline:after:hover {
+                padding: 0px;
+                transition: 250ms;
+            }
+
+    .btn--outline-search {
+                color: var(--btn-clr-white);
+                background-color: transparent;
+                border-radius: 18px;
+                padding: 15px 30px;
+                border: 2px solid;
+                margin: 0 20px 0 20px;
+                transition: 250ms;
+            }
+
+            .btn--outline-search:hover {
+                    padding-right: 100px;
+                    transition: 250ms;
+                }
+
+                .btn--outline-search:after:hover {
+                    padding: 0px;
+                    transition: 250ms;
+                }
+
+    .btn--filled {
+            color: var(--btn-clr-grey);
+            border-radius: 18px;
+            padding: 15px 30px;
+            border: 3px solid;
+            font-weight: bold;
+            background-color: var(--btn-clr-white);
+            border-color: var(--btn-clr-white);
+            margin: 0 20px 0 20px;
+            transition: linear 350ms;
+            transform: translate3d(30px);
+        }
+
+        .btn--filled:hover {
+            color: var(--btn-clr-white);
+            background-color: rgb(212, 175, 55);
+            border-color: rgb(212, 175, 55);
+        }
+
+        .btn--filled:after:hover {
+            padding: 0px;
+            transition: 250ms;
+        }
+
+
+    .btn--normal {
+        font-weight: bold;
+        width: 200px;
+        color: rgb(17, 17, 17, 1);
+        border-radius: 1px;
+        padding: 15px 30px;
+        border: 2px solid;
+        margin: 20px 0 20px 0;
+        transition: 450ms ease;
+    }
+
+    .btn--normal:hover {
+        color: var(--btn-clr-white);
+        border-color: rgb(17, 17, 17, 1);
+        background-color: rgb(28, 27, 27, 1);
+        transition: 450ms ease;
+    }
+
+    .btn--normal--dark {
+        font-weight: bold;
+        width: 200px;
+        background-color: transparent;
+        color: var(--btn-clr-white);
+        border-radius: 1px;
+        padding: 15px 30px;
+        border: 2px solid;
+        margin: 20px 0 20px 0;
+        transition: 450ms ease;
+    }
+
+    .btn--normal--dark:hover {
+        color: rgb(17, 17, 17, 1);
+        border-color: rgba(255, 255, 255, 1);
+        background-color: var(--btn-clr-white);
+        transition: 450ms ease;
+    }
+
+.btn--medium {
+    font-size: 18px;
+}
+
+.btn--tiny {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1366px){
+    .btn--medium {
+        font-size: 16px;
+    }
+}
