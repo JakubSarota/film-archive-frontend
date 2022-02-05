@@ -40,6 +40,13 @@
         "title": "Black Widow",
         "trailer": "https://www.youtube.com/watch?v=ybji16u608U&ab_channel=MarvelEntertainment",
         "rate": 8
+    },
+    {
+        "path": "/test",
+        "image": "https://i.pinimg.com/564x/d4/07/08/d40708509cf047a1942800eabe8306b2.jpg",
+        "title": "Eternals",
+        "trailer": "https://www.youtube.com/watch?v=x_me3xsvDgk&ab_channel=MarvelEntertainment",
+        "rate": 9
     }
 ]
     
