@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export default function Herosection() {
     return (
-        <div className="home">
+        <div className="Herosection home">
             <div className='hero-conteinter'>
                 <h1>FILM ARCHIVE</h1>
                     <hr className='line-under-text'/>

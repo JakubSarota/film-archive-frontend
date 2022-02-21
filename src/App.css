@@ -15,16 +15,9 @@
   display: flex;
   font-size: 12px;
   height: 100vh;
-  
 }
 
 .home, .signup {
-  /* background-image: url('/images/image-1.jpg'); */
-  
-  background-image: url('https://wallpapers.gry-online.pl/pliki/66109/1920x1080.jpg');
-  background-repeat: repeat-x;
-  background-size: cover;
-  background-position: center;
   color: #fff;
 }
 
