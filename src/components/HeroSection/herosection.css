@@ -23,7 +23,7 @@
             position: relative;
             font-size: 80px;
             letter-spacing: -2px;
-            text-shadow: 0 6.86px 8.896px rgb(196,181,157,1), 0 -2px 1px rgb(255,255,255,1);
+            /* text-shadow: 0 6.86px 8.896px rgb(196,181,157,1), 0 -2px 1px rgb(255,255,255,1); */
             line-height: 80px;
         }
 
