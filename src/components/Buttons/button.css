@@ -15,15 +15,15 @@
 .btn--outline {
     color: var(--btn-clr-white);
     background-color: transparent;
-    border-radius: 18px;
-    padding: 15px 30px;
-    border: 2px solid;
+    border-radius: 5px;
+    padding: 14px 50px;
+    border: 1px solid;
     margin: 0 20px 0 20px;
     transition: 250ms;
         }
 
         .btn--outline:hover {
-                background-color: rgba(255, 255, 255, 0.15);
+                background-color: rgba(255, 255, 255, 0.1);
                 transition: 250ms;
             }
 
@@ -35,9 +35,9 @@
     .btn--outline-search {
                 color: var(--btn-clr-white);
                 background-color: transparent;
-                border-radius: 18px;
-                padding: 15px 30px;
-                border: 2px solid;
+                border-radius: 5px;
+                padding: 13px 30px;
+                border: 1px solid;
                 margin: 0 20px 0 20px;
                 transition: 250ms;
             }
@@ -51,6 +51,9 @@
                     padding: 0px;
                     transition: 250ms;
                 }
+
+
+            
 
     .btn--filled {
             color: var(--btn-clr-grey);

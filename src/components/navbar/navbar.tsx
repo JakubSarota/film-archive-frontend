@@ -22,7 +22,6 @@ export default function Navbar() {
     }
     
     const changeBackground = () => {
-        // console.log(window.scrollY)
         if(window.scrollY >=80) {
             setNavbar(true)
         } else {
@@ -34,40 +33,59 @@ export default function Navbar() {
 
     return (
         <nav className={navbar ? 'navbar active' : 'navbar'}>
+            
             <div className="navbar-container">
-                <form className='navbar-header--logo'>
-                    <Link to='/' className='navbar-header-link--logo'>
-                        <RiIcons.RiMovie2Line className='logo-icon'/><h2>FILM <br/> ARCHIVE</h2>
-                    </Link>
-                </form>
+                <div className='navbar-header--left'>
+
+                    <li>
+                        <Link to='/' className='navbar-header-link--logo'>
+                            <RiIcons.RiMovie2Line className='logo-icon'/><h2>FILM ARCHIVE</h2>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/' className='navbar-header-link--text'>
+                            <p>Main page</p>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to='/' className='navbar-header-link--text'>
+                            <p>Movies</p>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to='/' className='navbar-header-link--text'>
+                            <p>Series</p>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to='/' className='navbar-header-link--text'>
+                            <p>Rankings</p>
+                        </Link>
+                    </li>
+                </div>
+                    
 
                 <div className='navbar-header--buttons'>      
                     <div className='button-items'>
                         <li>
                             <Button link='/test' buttonStyle='btn--outline-search' buttonSize='btn--medium'>
-                                <AiIcons.AiOutlineSearch/>
+                                <AiIcons.AiOutlineSearch className='navbar-header--search'/>
                             </Button>
                         </li>
                         <li>
-                            <Button link='/test' buttonStyle='btn--outline' buttonSize='btn--medium'>
-                                <a>News</a>
-                            </Button>
-                        </li>
-                        <li>
-                            <Button link='/test' buttonStyle='btn--outline' buttonSize='btn--medium'>
-                                <a>Watchlist</a>
-                            </Button>
-                        </li>
-                        <li>
-                            <Button link='/signup' buttonStyle='btn--filled' buttonSize='btn--medium'>
+                            <Button link='/signup' buttonStyle='btn--outline' buttonSize='btn--medium'>
                                 <a>Sign up</a>
                             </Button>
                         </li>
-                        <li>
+                        
+                        {/* <li>
                             <Link to="#" className='menu-bars'>
                                 <FaIcons.FaBars onClick={showSidebar}/>
                             </Link>
-                        </li>
+                        </li> */}
                     </div>
                 </div>
             </div>
