@@ -103,6 +103,10 @@
                 .button-items {
                     display: flex;
                 }
+
+                .button-items > li {
+                    margin: 0 20px 0 20px;
+                }
                 
         .nav-menu.active {
                     transition: 350ms;

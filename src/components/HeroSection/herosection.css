@@ -1,85 +1,55 @@
 .Herosection {
-    background-image: url('/images/image-1.jpg');
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-position: center;
-}
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+        object-fit: contain;
+    }
 
-.hero-conteinter {
-            margin-bottom: -20%;
-            height: none;
+    .Herosection-image {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .Herosection-recomend {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+
+        .Recomend-contener {
+            margin: 0 0 60px 100px;
+        }
+
+        .Recomend-contener > li {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            
+            flex-direction: row;
+            margin: 0 0 20px 0;
         }
 
-        .hero-conteinter > h1 {
-            display: block;
-            padding-bottom: 15px;
-            position: relative;
-            font-size: 80px;
-            letter-spacing: -2px;
-            line-height: 80px;
+        .Recomend-contener > li > h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            font-size: 40px;
+            /* text-decoration: underline; */
+        }
+        
+        .Recomend-contener > li > p {
+            margin: 0 10px 0 0;
+            font-size: 18px;
         }
 
-        .line-under-text {
-            width: 540px;
-            height: 0.2rem;
-            border-radius: 100rem;
-            background-color: #fff;
+        .Recomend-contener > li > a {
+            margin: 0 20px 0 0;
         }
 
-        .hero-conteinter--items {
-                    position: sticky;
-                    list-style-type: none;
-                    display: flex;
-                }
 
-                .hero-conteinter-link-items {
-                            box-sizing: border-box;
-                            align-items: flex-start;
-                            flex-direction: row;
-                            text-align: center;
-                            display: grid;
-                            margin: 16px;
-                            width: 160px;
-                        }
-
-                        .hero-conteinter-link {
-                            padding-top: 15px;
-                            font-size: 24px;
-                            text-decoration: none;
-                        }
-
-                        li { 
-                                    position: relative; 
-                                }
-
-                                h3 {
-                                    color: rgba(255, 255, 255, 1);
-                                    font-size: 22px;
-                                }
-
-                                h3:after {
-                                    background: none repeat scroll 0 0 transparent;
-                                    bottom: 0;
-                                    content: "";
-                                    display: block;
-                                    height: 2px;
-                                    left: 50%;
-                                    position: absolute;
-                                    background: #fff;
-                                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-                                    width: 0;
-                                }
-
-                                h3:hover:after {
-                                    width: 50%;
-                                    left: 25%;
-                                }
 
 @media screen and (max-width: 960px) {
     .hero-conteinter {

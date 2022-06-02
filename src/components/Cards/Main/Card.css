@@ -1,7 +1,7 @@
 .Card { 
             position: relative;
             text-align: center;
-            top: 50px;
+            background-color: white;
         }
 
         .Card__slider-featured-today {

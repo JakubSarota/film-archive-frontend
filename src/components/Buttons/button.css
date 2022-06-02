@@ -18,12 +18,11 @@
     border-radius: 5px;
     padding: 14px 50px;
     border: 1px solid;
-    margin: 0 20px 0 20px;
     transition: 250ms;
         }
 
         .btn--outline:hover {
-                background-color: rgba(255, 255, 255, 0.1);
+                color: rgb(212, 175, 55);
                 transition: 250ms;
             }
 
@@ -38,7 +37,6 @@
                 border-radius: 5px;
                 padding: 13px 30px;
                 border: 1px solid;
-                margin: 0 20px 0 20px;
                 transition: 250ms;
             }
 
@@ -57,13 +55,12 @@
 
     .btn--filled {
             color: var(--btn-clr-grey);
-            border-radius: 18px;
-            padding: 15px 30px;
+            border-radius: 5px;
+            padding: 12px 30px;
             border: 3px solid;
             font-weight: bold;
             background-color: var(--btn-clr-white);
             border-color: var(--btn-clr-white);
-            margin: 0 20px 0 20px;
             transition: linear 350ms;
             transform: translate3d(30px);
         }
