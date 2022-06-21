@@ -28,7 +28,7 @@ export default function Navbar() {
             setNavbar(false)
         }
     }
-
+    
     window.addEventListener('scroll', changeBackground)
 
     return (
@@ -65,11 +65,12 @@ export default function Navbar() {
                             <p>Rankings</p>
                         </Link>
                     </li>
+                    
                     {/* <li>
-                            <Link to="#" className='menu-bars'>
-                                <FaIcons.FaBars onClick={showSidebar}/>
-                            </Link>
-                        </li> */}
+                        <Link to="#" className='menu-bars'>
+                            <FaIcons.FaBars onClick={showSidebar}/>
+                        </Link>
+                    </li> */}
                 </div>
                     
 

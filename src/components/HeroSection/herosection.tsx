@@ -8,23 +8,7 @@ import NavbarCard from 'react-slick'
 
 export default function Herosection() {
 
-    let fillstars = (n: Number) => {
-        
-        return <>{Array.from(Array(n), (e, i) => {
-                return (
-                    <p key={i} className='filledstar'><AiFillStar/></p>
-                )
-        })}</>
-    }
-
-    let unfillstars = (n: Number) => {
-        
-        return <>{Array.from(Array(n), (e, i) => {
-                return (
-                    <p key={i} className='unfilledstar'><AiOutlineStar/></p>
-                )
-        })}</>
-    } 
+    
     
     return (
         <div>
@@ -57,20 +41,18 @@ export default function Herosection() {
                                     </Button>
                                 </li>
                             </div>
+                            
                         </div>
-                        {/* <div className='Herosection-points'>
+                        <div className='Herosection-points'>
                             <div className='Herosection-points-contener'>
                                 <li>
                                     <p>Rating based on: {movie.users_rates}</p>
                                 </li>
-                                <li>
-                                    <div className='rating'>
-                                        {fillstars(Math.round(movie.rates))}
-                                        {unfillstars(Math.round(5-movie.rates))}
-                                    </div>
+                                <li className='rating'> 
+                                    <h1>{movie.rates}<AiFillStar/></h1>
                                 </li>
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                 )
             })}

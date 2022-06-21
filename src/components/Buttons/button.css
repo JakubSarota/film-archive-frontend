@@ -1,6 +1,7 @@
 :root {
     --btn-clr-white: rgb(255, 255, 255, 1);
     --btn-clr-grey: rgb(31, 31, 31, 0.9);
+    --btn-clr-lightblue: rgb(13,155,255,1);
 }
 
 .btn {
@@ -22,7 +23,7 @@
         }
 
         .btn--outline:hover {
-                color: rgb(212, 175, 55);
+                color: var(--btn-clr-lightblue);
                 transition: 250ms;
             }
 
@@ -76,50 +77,34 @@
             transition: 250ms;
         }
 
+    .btn__get_more {
+                
+                border-color: (30,30,30, 1);
+                background-color: rgb(30, 30, 30, 1);
+                color: var(--btn-clr-white);
+                border-radius: 15px;
+                padding: 8px 15px;
+                border: 1px solid;
+                transition: 250ms;
+            }
 
-    .btn--normal {
-        font-weight: bold;
-        width: 200px;
-        color: rgb(17, 17, 17, 1);
-        border-radius: 1px;
-        padding: 15px 30px;
-        border: 2px solid;
-        margin: 20px 0 20px 0;
-        transition: 450ms ease;
-    }
+            .btn__get_more:hover {
+                background-color: var(--btn-clr-lightblue);
+                border-color: var(--btn-clr-lightblue);
+                transition: 250ms;
+            }
 
-    .btn--normal:hover {
-        color: var(--btn-clr-white);
-        border-color: rgb(17, 17, 17, 1);
-        background-color: rgb(28, 27, 27, 1);
-        transition: 450ms ease;
-    }
-
-    .btn--normal--dark {
-        font-weight: bold;
-        width: 200px;
-        background-color: transparent;
-        color: var(--btn-clr-white);
-        border-radius: 1px;
-        padding: 15px 30px;
-        border: 2px solid;
-        margin: 20px 0 20px 0;
-        transition: 450ms ease;
-    }
-
-    .btn--normal--dark:hover {
-        color: rgb(17, 17, 17, 1);
-        border-color: rgba(255, 255, 255, 1);
-        background-color: var(--btn-clr-white);
-        transition: 450ms ease;
-    }
+            .btn__get_more:after:hover {
+                padding: 0px;
+                transition: 250ms;
+            }
 
 .btn--medium {
     font-size: 18px;
 }
 
 .btn--tiny {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 1366px){

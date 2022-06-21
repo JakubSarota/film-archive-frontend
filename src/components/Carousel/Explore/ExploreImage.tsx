@@ -11,6 +11,7 @@ export default function ExploreImage({path, src, title, rate, link} : {path: str
                     <img src={src} className="Explore__item--image" />
                     <svg height="20" width="15" className='test'>
                         <polygon points="0 0,15 0, 15 20, 7.5 12, 0 20"/>
+                        <div>+</div>
                     </svg>
                 </figure>
             </Link>
