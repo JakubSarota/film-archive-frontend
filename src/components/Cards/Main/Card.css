@@ -1,113 +1,33 @@
 .Card { 
-            position: relative;
             text-align: center;
-            background-color: white;
+            background-color: rgb(22, 22, 26, 1);
+            height: auto;
         }
 
-        .Card__slider-featured-today {
-            position: relative;
-            top: 50px;
+.Card__slider--explore {
+    position: relative;
+    top: 40px;
+    height: 600px;
         }
-
-        .Card__slider-featured-today > h1 {
-            margin: 0 0 30px 0;
+        .Card__slider--explore > h2 {
+            
+            text-align: left;
+            margin: 0 0 20px 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: rgb(55, 55, 55, 1);
-            text-decoration: underline 2px;
-            text-decoration-color: rgb(212, 175, 55, 1);
-            transition: color .3s ease
-        }
-
-        .Card__container {
-            display: flex;
-            padding: 0 500px 0 500px;
-        }
-
-            .Card__column {      
-                flex-direction: column;
-                display: flex;
-                flex: 1;
-            }
-
-                .Card__content {
-                    flex: 1;
-                }
-
-                .Card__items-Link {
-                    text-decoration: none;
-                }
-
-                .Card__items-Link > h2 {
-                    color: rgb(47, 65, 71, 0.8);
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                    transition: 300ms ease;
-                }
-
-                .Card__items-Link > h2:hover {
-                    color: rgb(47, 65, 71, 1);
-                    transition: 300ms ease;
-                }
-
-.Card__slider-explore {
-            position: relative;
-            text-align: -webkit-center;
-            height: 720px;
-            top: 75px;
-            background-color: rgb(5, 5, 5);
-        }
-
-        .Card__slider-explore-wrapper {
-            position: relative;
-            top: 50px;
-        }
-
-        .Card__slider-explore-wrapper > h1 {
-            margin: 0 0 50px 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            position: relative;
             color: rgb(255,255,255,1);
         }
 
-.Card__slider-reviews {
-            position: relative;
+        .Card__slider--explore-carousel {
             text-align: -webkit-center;
-            top: 125px;
         }
 
-        .Card__slider-reviews > h1 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: rgb(55, 55, 55, 1);
-            text-decoration: underline 2px;
-            text-decoration-color: rgb(212, 175, 55, 1);
-        }
-
-.Card__slider-fanfavorite {
-            position: relative;
-            text-align: -webkit-center;
-            height: 720px;
-            top: 150px;
-        }
-
-        .Card__slider-fanfavorite > h1 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: rgb(55, 55, 55, 1);
-            text-decoration: underline 2px;
-            text-decoration-color: rgb(212, 175, 55, 1);
-        }
-
+        
 
 @media screen and (max-width: 1366px) {
-    .Card__slider-explore {
-        position: relative;
-        text-align: -webkit-center;
-        height: 680px;
-        top: 75px;
-        background-color: rgb(5, 5, 5);
-    }
+    
 }
 
 @media screen and (max-width: 960) {
-    .Card { 
-        top: 20px;
-    }
+    
+
 }

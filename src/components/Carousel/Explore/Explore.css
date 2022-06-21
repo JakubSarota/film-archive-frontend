@@ -1,20 +1,41 @@
-.ExploreImage {
+.Explore__item {
     display: table-caption;
     border-width: 0.5px;
     border-style: solid;
     border-color: rgb(255, 255, 255, 0.2);
 }
-    .ExploreImage-link {
+    .Explore__item--link {
             text-decoration: none!important; 
         }
 
-        .ExploreImage-element {
+        .test {
+            position: absolute;
+            top: 0px;
+            left: px;
+            
+        }
+
+        /* .Explore__item--pic-wrap::after {
+            content: attr(data-category);
+            position: absolute;
+            bottom: 100px;
+            margin-left: 75px;
+            padding: 6px 8px;
+            max-width: calc((100%) - 60px);
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            background-color: #1f98f4;
+            box-sizing: border-box;
+        } */
+
+        .Explore__item--pic-wrap {
                     width: 100%;
                     height: 100%;
                     overflow: hidden;
                 }
 
-                .ExploreImage-image {
+                .Explore__item--image {
                     position: relative;
                     display: block;
                     object-fit: cover;
@@ -24,46 +45,60 @@
                     transition: 0.25s linear;
                 }
 
-                .ExploreImage-image:hover {
+                .Explore__item--image:hover {
                     transform: scale(1.05);
                 }
 
-                .ExploreImage-underline {
+                .Explore__item--underline {
                             width: auto;
-                            display: flex;
-                            top: 10px;
-                            align-items: center;
-                            flex-direction: column;
-                            background-color: rgb(26, 26, 26, 1);                            
+                            height: 100px;
+                            display: -webkit-box;
+                            background-color: rgba(26, 26, 26, 0.4);                            
                         }
 
                         .ExploreImage-items {
-                            top: 5px;
-                            height: 110px;
-                            position: relative;
-                        }
-                        
-                        .ExploreImage-title {
-                            position: sticky;
-                            font-size: 18px;
-                            color: rgb(255, 255, 255, 1);
-                        }
+                                    position: relative;
+                                }
 
-                        .ExploreImage-rate {
-                            display: flex;
-                            justify-content: center;
-                            color: rgb(212, 175, 55, 1);
-                            font-size: 20px;
-                        }
+                                .ExploreRates {
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
+                                            margin: 0 0 0 10px;
+                                        }
+                                        
+                                        
+                                        .ExploreImage-rate_stars {
+                                            display: flex;
+                                            justify-content: center;
+                                            color: rgb(212, 175, 55, 1);
+                                            font-size: 16px;
+                                        }
 
-                        .ExploreImage-button {
-                            padding: 10px 30px;
-                            text-decoration: none;
-                            display: flex;
-                            align-items: center;
-                            display: flex;
-                            cursor: pointer;
-                        }
+                                        .ExploreImage-rate_number {
+                                            color: rgb(255,255,255, 1);
+                                            margin: 0 0 0 5px;
+                                        }
+                                
+                                .ExploreImage-title {
+                                            position: relative;
+                                            color: rgb(255,255,255,1);
+                                            font-size: 14px;
+                                            text-align: right;
+                                        }
+                                        
+                                        .ExploreLink {
+                                            margin: 5px 0 0 0;
+                                            display: flex;
+                                            flex-direction: row;
+                                        }
+
+                                
+
+                                .ExploreImage-button {
+                                    background-color: transparent;
+                                    border-color: transparent;
+                                }
 
 .right-arrow__explore {
     position: absolute;
@@ -86,7 +121,7 @@
 }
 
 .rigt-arrow-background__explore, .left-arrow-background__explore {
-        background-color: rgb(225, 185, 50);
+        background-color: rgb(22, 22, 26, .4);
         width: 50px;
         height: 50px;
         display: flex;
@@ -107,27 +142,14 @@
         margin: 0 10px;
     }
 
-    .ExploreImage-image {
-        width: 210px;
-        height: 315px;
-    }
-    
-    .ExploreImage-items {
-        top: 5px;
-        height: 95px;
-    }
+    .Explore__item--link {
+                height: 95px;
+            }
 
-    .ExploreImage-title {
-        font-size: 16px;
-    }
-
-    .ExploreImage-rate {
-        font-size: 18px;
-    }
-
-    .ExploreImage-button {
-        padding: 8px 22px;
-    }
+            .Explore__item--image {
+                width: 210px;
+                height: 315px;
+            }
 }
 
 

@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Raya and the Last Dragon",
+        "image": ["https://m.media-amazon.com/images/M/MV5BZTNmMTE1NzItYmFhMy00MGNkLWI2M2QtYzc5ZmMwY2U5YWJlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg","https://m.media-amazon.com/images/M/MV5BZmY1ZjhlNGQtNTZhNS00ZGM1LTgyZDctNDA3YTQ4NjIwOGY3XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg"],
+        "category": ["Fantasy", "Animation"],
+        "year": 2021,
+        "trailer": "https://www.youtube.com/watch?v=1VIZ89FEjYI&ab_channel=WaltDisneyAnimationStudios",
+        "info": "/test",
+        "users_rates": 230,
+        "rates": 4
+    }
+    
+]

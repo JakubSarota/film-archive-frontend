@@ -65,6 +65,11 @@ export default function Navbar() {
                             <p>Rankings</p>
                         </Link>
                     </li>
+                    {/* <li>
+                            <Link to="#" className='menu-bars'>
+                                <FaIcons.FaBars onClick={showSidebar}/>
+                            </Link>
+                        </li> */}
                 </div>
                     
 
@@ -81,11 +86,7 @@ export default function Navbar() {
                             </Button>
                         </li>
                         
-                        {/* <li>
-                            <Link to="#" className='menu-bars'>
-                                <FaIcons.FaBars onClick={showSidebar}/>
-                            </Link>
-                        </li> */}
+                        
                     </div>
                 </div>
             </div>

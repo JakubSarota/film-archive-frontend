@@ -122,7 +122,7 @@
                 }
 
                 .slide-icon {
-                    font-size: 20px;
+                    font-size: 32px;
                     color: rgb(212, 175, 55, 0.8);
                 }
 
@@ -156,9 +156,9 @@
                         margin: 5px;
                     }
 
-                    .slide-icon {
+                    /* .slide-icon {
                         font-size: 18px;
-                    }
+                    } */
 
                     .slide-button > h4 {
                         font-size: 14px;

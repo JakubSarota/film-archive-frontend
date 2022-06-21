@@ -1,67 +1,118 @@
 .Herosection {
-        height: 100vh;
+        height: 80vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 -30px 40px 0px rgba(22, 22, 26, 1);
         object-fit: contain;
+        position: relative;
     }
 
     .Herosection-image {
         object-fit: cover;
         width: 100%;
         height: 100%;
-        position: fixed;
         z-index: -1;
     }
 
     .Herosection-recomend {
-            position: fixed;
+            position: absolute;
             left: 0;
             bottom: 0;
+            
         }
 
         .Recomend-contener {
-            margin: 0 0 60px 100px;
+            margin: 0 0 100px 100px;
         }
 
         .Recomend-contener > li {
-            display: flex;
-            flex-direction: row;
-            margin: 0 0 20px 0;
-        }
-
-        .Recomend-contener > li > h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 100;
-            font-size: 40px;
-            /* text-decoration: underline; */
-        }
-        
-        .Recomend-contener > li > p {
-            margin: 0 10px 0 0;
-            font-size: 18px;
-        }
-
-        .Recomend-contener > li > a {
-            margin: 0 20px 0 0;
-        }
-
-
-
-@media screen and (max-width: 960px) {
-    .hero-conteinter {
-                margin-bottom: -50%;
-                width: 80%;
+                display: flex;
+                flex-direction: row;
+                margin: 0 0 20px 0;
             }
 
-            .line-under-text {
-                width: 60%;
+            .Recomend-contener > li > h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 100;
+                font-size: 40px;
+                /* text-decoration: underline; */
+            }
+        
+        .Recomend-contener > li > p {
+                margin: 0 10px 0 0;
+                font-size: 18px;
+            }
+
+            .Recomend-contener > li > a {
+                margin: 0 20px 0 0;
+            }
+    
+    .Herosection-points {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+
+        .Herosection-points-contener {
+            margin: 0 60px 80px 0;
+            padding: 14px 50px;
+            border: 1px solid;
+            background-color: rgb(0,0,0,0.10);
+        }
+
+        .rating  {
+            display: flex;
+            flex-direction: row;
+            margin: 10px 0 0 0;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        .rating-number {
+            font-size: 24px;
+            color: rgb(255,255,255,1);
+        }
+
+        .rating > p {
+            font-size: 28px;
+            color: rgb(180, 180, 0);
+        }
+
+@media screen and (max-width: 1500px) {
+    .Herosection {
+        height: 100vh;
+    }
+    .Recomend-contener {
+        margin: 0 0 60px 100px;
+    }
+
+    .Herosection-points-contener {
+        margin: 0 60px 60px 0;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .Herosection {
+        height: 40vh;
+        width: auto;
+            }
+            .Herosection-image {
+                width: 100%;
+                height: 100%;
             }
 
             .hero-conteinter--items {
+                display: none;
+            }
+
+            .Recomend-contener {
+                margin: 0 0 20px 20px;
+            }
+
+            .Herosection-points {
                 display: none;
             }
 
