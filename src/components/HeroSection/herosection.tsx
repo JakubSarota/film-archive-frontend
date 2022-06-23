@@ -15,7 +15,7 @@ export default function Herosection() {
             {HerosectionData.map((movie, index) => {
                 return(
                     <div className="Herosection home">
-                        <img src={movie.image[0]} className='Herosection-image'></img>
+                        <img src={movie.images[0]} className='Herosection-image'></img>
             
                         <div className='Herosection-recomend'>      
                             <div className='Recomend-contener'>

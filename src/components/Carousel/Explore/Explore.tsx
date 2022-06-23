@@ -69,14 +69,14 @@ const Explore = () => {
 
     return( 
         <SliderCard {...settingsCard}>
-            {ExploreData.map((image, index) => {
+            {ExploreData.map((explore, index) => {
                 return(
                     <ExploreIamge key={index}
-                        path={image.path}
-                        src={image.image}
-                        title={image.title}
-                        rate={image.rate}
-                        link={image.trailer}
+                        path={explore.info}
+                        poster={explore.poster}
+                        title={explore.title}
+                        rate={explore.rate}
+                        link={explore.trailer}
                     />
                 )
             })}

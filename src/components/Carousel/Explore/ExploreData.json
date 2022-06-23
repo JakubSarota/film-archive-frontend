@@ -1,59 +1,80 @@
 [
     {
-        "path": "/test",
-        "image": "https://i.pinimg.com/564x/d4/07/08/d40708509cf047a1942800eabe8306b2.jpg",
         "title": "Eternals",
+        "poster": "https://i.pinimg.com/564x/d4/07/08/d40708509cf047a1942800eabe8306b2.jpg",
+        "images": "",
+        "category": ["Fantasy", "Animation"],
+        "year": 2021,
         "trailer": "https://www.youtube.com/watch?v=x_me3xsvDgk&ab_channel=MarvelEntertainment",
-        "rate": 8
+        "info": "/test",
+        "users_rates": 230,
+        "rate": 8.2
     },
     {
-        "path": "/test",
-        "image": "https://i.pinimg.com/564x/e6/1a/d2/e61ad291e0599a356a6777ab0cc935da.jpg",
-        "title": " Raya and the Last Dragon",
-        "trailer": "https://www.youtube.com/watch?v=1VIZ89FEjYI&ab_channel=WaltDisneyAnimationStudios",
-        "rate": 9
-    },
-    {
-        "path": "/test",
-        "image": "https://i.pinimg.com/564x/b7/10/51/b71051cc19e772e3c36dcf16d4235b20.jpg",
         "title": "The Witcher",
+        "poster": "https://i.pinimg.com/564x/b7/10/51/b71051cc19e772e3c36dcf16d4235b20.jpg",
+        "images": [""],
+        "category": [""],
+        "year": 2020,
         "trailer": "https://www.youtube.com/watch?v=ndl1W4ltcmg&ab_channel=TheWitcherNetflix",
-        "rate": 10
+        "info": "",
+        "users_rates": 0,
+        "rate": 9.1
     },
     {   
-        "path": "/test",
-        "image": "https://i.pinimg.com/originals/07/8c/ae/078cae92b0de1da59038e9ab9680ee32.png",
-        "title": "Lupin",
-        "trailer": "https://www.youtube.com/watch?v=ndl1W4ltcmg&ab_channel=TheWitcherNetflix",
-        "rate": 9
+        "title": "Obi-wan Kenobi",
+        "poster": "https://cdn1.naekranie.pl/wp-content/uploads/2022%2F05%2FFR6mcs0XMAIQI-H_627278d335c84.jpeg",
+        "images": ["https://cdn1.naekranie.pl/wp-content/uploads/2022%2F05%2FFR6mcs0XMAIQI-H_627278d335c84.jpeg", "https://pbs.twimg.com/media/FUqGZvTVsAAEdVw.jpg"],
+        "category": ["Space opera", "Fantasy"],
+        "year": 2022,
+        "trailer": "",
+        "info": "",
+        "users_rates": 7.1,
+        "rate": 7.3
     },
     {
-        "path": "/test",
-        "image": "https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_21043_v2_6d1b73b8.jpeg",
-        "title": "Black Widow",
-        "trailer": "https://www.youtube.com/watch?v=ybji16u608U&ab_channel=MarvelEntertainment",
-        "rate": 8
-    },
-    { 
-        "path": "/test",
-        "image": "https://m.media-amazon.com/images/M/MV5BMWFkZjFiZjktOWNjMS00ZjllLThkOGUtYWUxZmQzNTViNTNiXkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_FMjpg_UX864_.jpg",
         "title": "Boba Fett",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMWFkZjFiZjktOWNjMS00ZjllLThkOGUtYWUxZmQzNTViNTNiXkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_FMjpg_UX864_.jpg",
+        "images": [""],
+        "category": [""],
+        "year": 2021,
         "trailer": "",
-        "rate": 10
+        "info": "",
+        "users_rates": 0,
+        "rate": 7.8
     },
     { 
-        "path": "/test",
-        "image": "https://static.posters.cz/image/750/plakaty/the-punisher-aim-i57535.jpg",
-        "title": "Punisher",
+        "title": "Lupin",
+        "poster": "https://i.pinimg.com/originals/07/8c/ae/078cae92b0de1da59038e9ab9680ee32.png",
+        "images": [""],
+        "category": [""],
+        "year": 2000,
         "trailer": "",
-        "rate": 9
+        "info": "",
+        "users_rates": 0,
+        "rate": 9.8
+    },
+    { 
+        "title": "Black Widow",
+        "poster": "https://lumiere-a.akamaihd.net/v1/images/p_blackwidow_21043_v2_6d1b73b8.jpeg",
+        "images": [""],
+        "category": [""],
+        "year": 2000,
+        "trailer": "",
+        "info": "",
+        "users_rates": 0,
+        "rate": 9.1
     },
     {
-        "path": "/test",
-        "image": "https://i.pinimg.com/originals/50/f2/03/50f203c28c8546a319eeca4b60a1784a.jpg",
-        "title": "Daredevil",
+        "title": "Punisher",
+        "poster": "https://static.posters.cz/image/750/plakaty/the-punisher-aim-i57535.jpg",
+        "images": [""],
+        "category": [""],
+        "year": 2000,
         "trailer": "",
-        "rate": 8
+        "info": "",
+        "users_rates": 0,
+        "rate": 7.8
     }
 ]
 
