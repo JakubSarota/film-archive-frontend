@@ -44,10 +44,10 @@
             }
 
             .Explore__item--contents {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 100%;
                     }
                     
                     .Explore__item--buttons {
@@ -61,14 +61,15 @@
                             .Explore__item--button {
                                         border-radius: 4px;
                                         background-color: transparent;
-                                        
                                         border: none;
                                         transition: 250ms ease;
+                                        margin: 0 3px 0 0;
                                     }
 
                                     .Explore__item--icon {
+                                        display: flex;
                                         color: rgb(255,255,255, 1);
-                                        margin: 0 5px 0 0;
+                                        margin: 1px 1px 1px 1px;
                                         font-size: 36px;
                                     }
 
@@ -132,6 +133,7 @@
         filter: brightness(100%);
         transition: 550ms ease;
     }
+
     .left-arrow-icon__explore:hover, .right-arrow-icon__explore:hover {
        
     }
@@ -165,4 +167,11 @@
     }
 }
 
+@media screen and (max-width: 960px) {
+    .Explore__item--button:hover {
+        color: transparent;
+        background-color: transparent;
+        cursor: none;
+    } 
+}
 

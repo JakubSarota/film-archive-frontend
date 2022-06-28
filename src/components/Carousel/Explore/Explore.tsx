@@ -1,12 +1,25 @@
 import SliderCard from 'react-slick'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import ExploreData from './ExploreData.json'
 import ExploreIamge from './ExploreImage'
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+// import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { GrFormNext, GrFormPrevious } from 'react-icons/gr'
+import MoviesService from '../../Services/MoviesService'
 import './Explore.css'
 
-const Explore = () => {
+function Explore() {
+    const [movies, setMovies] = useState([])
+
+    const getMovies = () => {
+        MoviesService.getMovies().then(res => {
+            setMovies(res.data)
+        })
+    }
+
+    useEffect(() => {
+        getMovies()
+    })
+
     const [current, setCurrent] = useState(0) 
 
     const NextArrow = ({onClick}: any) => {
@@ -69,14 +82,14 @@ const Explore = () => {
 
     return( 
         <SliderCard {...settingsCard}>
-            {ExploreData.map((explore, index) => {
+            {movies.map((movie, index) => {
                 return(
                     <ExploreIamge key={index}
-                        path={explore.info}
-                        poster={explore.poster}
-                        title={explore.title}
-                        rate={explore.rate}
-                        link={explore.trailer}
+                        path={"/"}
+                        poster={"/"}
+                        title={"/"}
+                        rate={0}
+                        link={"/"}
                     />
                 )
             })}

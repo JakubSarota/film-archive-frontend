@@ -66,16 +66,17 @@ export default function Navbar() {
                         </Link>
                     </li>
                     
-                    {/* <li>
-                        <Link to="#" className='menu-bars'>
-                            <FaIcons.FaBars onClick={showSidebar}/>
-                        </Link>
-                    </li> */}
+                    
                 </div>
                     
 
                 <div className='navbar-header--buttons'>      
                     <div className='button-items'>
+                        <li>
+                            <Link to="#" className='menu-bars'>
+                                <FaIcons.FaBars onClick={showSidebar}/>
+                            </Link>
+                        </li>
                         <li>
                             <Button link='/test' buttonStyle='btn--outline-search' buttonSize='btn--medium'>
                                 <AiIcons.AiOutlineSearch className='navbar-header--search'/>

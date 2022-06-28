@@ -9,6 +9,4 @@ class UserService {
     
 }
 
-console.log(UserService)
-
 export default new UserService()

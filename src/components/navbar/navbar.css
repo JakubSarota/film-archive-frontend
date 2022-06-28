@@ -196,25 +196,18 @@
         width: 50%;
     }
     .menu-bars {
+        position: inherit;
         display: flex;
         color: rgb(255,255,255, 1);
         font-size: 35px;
-        position: relative;
-        top: 13px;
-        margin: 30px;
     }
 
-    .navbar-header--left > li:nth-child(n+2) {
+    .navbar-header--left > li:nth-child(1n+2) {
         display: none;
     }
 
-    .button-items > li:nth-child(-n+2) {
+    .button-items > li:nth-child(1n+2) {
         display: none;
-    }
-
-    .button-items > li {
-        position: relative;
-        top: 15px;
     }
 
     .navbar {
@@ -223,7 +216,7 @@
 
     .navbar-header-link--logo {
         position: absolute;
-        top: 10px;
+        top: 25px;
     }
     
     .navbar-header-link--logo > h2 {
@@ -252,5 +245,9 @@
     span {
         margin-left: 0px;
     }
+
+    .navbar.active > .navbar-container > .navbar-header--buttons {
+        top: 0;
+    } 
     
 }
