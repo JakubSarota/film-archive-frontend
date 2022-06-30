@@ -1,4 +1,3 @@
-import React from 'react'
 import * as RiIcons from 'react-icons/ri'
 
 export const SidebarData = [
@@ -27,7 +26,7 @@ export const SidebarData = [
     {
         title: 'Movies',
         path: '/test',
-        icon: <RiIcons.RiMovie2Line/>,
+        icon: <RiIcons.RiMovie2Line />,
         cName: 'nav-text'
     },
     {
@@ -48,7 +47,7 @@ export const SidebarData = [
     {
         title: 'Series',
         path: '/',
-        icon: <RiIcons.RiMovieLine/>,
+        icon: <RiIcons.RiMovieLine />,
         cName: 'nav-text'
     },
     {

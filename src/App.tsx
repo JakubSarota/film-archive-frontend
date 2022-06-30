@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import home from './pages/home'
 import test from './pages/test'
-import signup from './pages/signup'
+import sign from './pages/sign'
 import './App.css'
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
         <Switch>
           <Route path='/' exact component={home}/>
           <Route path='/test' exact component={test}/> {/*test linkowania*/}
-          <Route path='/signup' exact component={signup}/>
+          <Route path='/sign' exact component={sign}/>
         </Switch>
       </Router>
     </div>

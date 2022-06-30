@@ -13,11 +13,9 @@ export default function Card() {
                     </Button>
                 </div>
                 <div className='Card__slider--explore-carousel'>
-                    <Explore/>
+                    <Explore />
                 </div>
-               
             </div>
-            
         </div>
     )
 }

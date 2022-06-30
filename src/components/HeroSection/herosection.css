@@ -1,3 +1,4 @@
+/*Main page*/
 .Herosection {
         height: 80vh;
         width: 100%;
@@ -75,7 +76,50 @@
             color: rgb(13,155,255,1);
         }
 
+    /*Sign page*/
+    
+    .Herosection__Sign {
+                position: absolute;
+                justify-content: center;
+            }
+
+            .Herosection__Sign--contener {
+                        border-radius: 5px;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        padding: 20px;
+                    }
+
+                    .Herosection__Sign--Sign-form {
+
+                            }
+
+                            .Herosection__Sign--Sign-form > li {
+                                        margin: 25px 0 0 0;
+                                    }
+                                    
+                                    .Herosection__Sign--input {
+                                        border-radius: 3px;
+                                        background-color: rgb(51,51,51,1);
+                                        width: auto;
+                                        padding: 10px;
+                                    }
+
+                                    .Herosection__Sign--input::placeholder {
+                                        color: rgba(255, 255, 255, 0.3);
+                                    }
+
+                                    .Herosection__Sign--submit {
+                                        margin: 10px 0 0 0;
+                                        border-radius: 3px;
+                                        background-color: rgb(13,155,255,1); 
+                                        width: auto;
+                                        cursor: pointer;
+                                    }
+
+
 @media screen and (max-width: 1500px) {
+    /*Main page*/
+
     .Herosection {
         height: 100vh;
     }
@@ -86,9 +130,12 @@
     .Herosection-points-contener {
         margin: 0 60px 60px 0;
     }
+
+    /*Sign page*/
 }
 
 @media screen and (max-width: 960px) {
+    /*Main page*/
     .Herosection {
         height: 40vh;
         width: auto;
@@ -137,5 +184,6 @@
                     h3 {
                         font-size: 18px;
                     }
+    /*Sign page*/
 }
 

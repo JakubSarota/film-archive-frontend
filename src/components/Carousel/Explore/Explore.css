@@ -99,7 +99,19 @@
                             .Explore__item--text {
                                 color: rgb(255,255,255,1);
                             }
-            
+
+/*If movie haven't link to trailer */
+
+.Explore__item--hide {
+    display: none
+}
+
+.Explore__item--rate-without-play-button {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 150px;
+}
+
 
 .right-arrow__explore, .left-arrow__explore {
     position: absolute;
@@ -164,6 +176,12 @@
 
     .Explore__item--rate {
         margin: 0 0 0 75px;
+    }
+
+    /*If movie haven't link to trailer */
+
+    .Explore__item--rate-without-play-button {
+        margin: 0 0 0 116px;
     }
 }
 

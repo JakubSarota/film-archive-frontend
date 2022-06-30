@@ -1,9 +1,19 @@
-import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AiFillStar, AiOutlinePlayCircle, AiOutlinePlusCircle } from 'react-icons/ai'
-import { Button } from '../../Buttons/Button'
 
-export default function ExploreImage({path, poster, title, rate, link} : {path: string,  poster: any, title: string, rate: number, link: string} ) {
+export default function ExploreImage({ path, poster, title, rate, link }: { path: string, poster: any, title: string, rate: number, link: string }) {
+
+    const [play, setPlay] = useState(true)
+
+    const displayButton = () => {
+        if (link == null) {
+            setPlay(false)
+        }
+    }
+
+    window.addEventListener('load', displayButton)
+
     return (
         <li className="Explore__item">
             <Link to={path} className="Explore__item--link">
@@ -18,20 +28,21 @@ export default function ExploreImage({path, poster, title, rate, link} : {path: 
                 <div className="Explore__item--contents">
 
                     <li className='Explore__item--buttons'>
-                            <button className='Explore__item--button'>
-                                <a href={link} target='__blank'>
-                                    <AiOutlinePlayCircle className='Explore__item--icon'/>
-                                </a> 
-                            </button> 
-                            <button className='Explore__item--button'>
-                                <a href={link} target='__blank'>
-                                    <AiOutlinePlusCircle className='Explore__item--icon'/>
-                                </a> 
-                            </button>
-                            <div className='Explore__item--rate'>
-                                <h3 className='Explore__item--number'>{rate}<AiFillStar/></h3>
-                            </div>
-                    </li> 
+                        <button className={play ? 'Explore__item--button' : 'Explore__item--hide'}>
+                            <a href={link} target='__blank'>
+                                <AiOutlinePlayCircle className='Explore__item--icon' />
+                            </a>
+                        </button>
+                        <button className='Explore__item--button'>
+                            <a href={link} target='__blank'>
+                                <AiOutlinePlusCircle className='Explore__item--icon' />
+                            </a>
+                        </button>
+
+                        <div className={play ? 'Explore__item--rate' : 'Explore__item--rate-without-play-button'}>
+                            <h3 className='Explore__item--number'>{rate}<AiFillStar /></h3>
+                        </div>
+                    </li>
 
                     <li className='Explore__item--title'>
                         <a className="Explore__item--text">
@@ -39,7 +50,7 @@ export default function ExploreImage({path, poster, title, rate, link} : {path: 
                         </a>
                     </li>
 
-                </div> 
+                </div>
             </div>
         </li>
     )
